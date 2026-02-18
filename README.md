@@ -214,11 +214,38 @@ after -
  we will see the "Resistive region"/"Linear Region" of operation by applying Drain-source voltage. If we keep on increasing the Gate-source voltage, the channel    width keeps on increasing.
  
 
- <img width="600" height="400" alt="Screenshot 2026-02-18 141437" src="https://github.com/user-attachments/assets/11e7e4f6-9632-4c1e-83b0-548751e68575" />  <br/>
-                                                                                                                                                                    <img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/33bbd97c-3bd1-415e-a632-85c6f3c3d70e" /> <br/>                                                                                                                                                                                               This indicates that the net induced charge is proportional to (Vgs − Vt). Now, let us apply a very small Vds initially. Assume Vt = 0.45 V, and keep Vgs also      small at the beginning.  
-                                                                                                                                                                
-                                                                                                                                            
+ <img width="600" height="400" alt="Screenshot 2026-02-18 141437" src="https://github.com/user-attachments/assets/11e7e4f6-9632-4c1e-83b0-548751e68575" />  <br/> 
+ 
+                                                                                                                                                                  
+  <img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/33bbd97c-3bd1-415e-a632-85c6f3c3d70e" /> <br/>   
+
+  
+  This indicates that the net induced charge is proportional to (Vgs − Vt). Now, let us apply a very small Vds initially. Assume Vt = 0.45    V, and keep Vgs also      small at the beginning. -- 
+  - the source is grounded and Drain is at some potential, so there will be a voltage gradient accross the channel.
+  - Assume the effective channel length is L. Let the x-axis lie along the channel length and the y-axis be perpendicular to it.
+  - Here, the y-axis represents the width of the transistor, while the x-axis corresponds to the voltage variation along the channel.
+  - Let V(x) represent the voltage at any point x along the channel.
+  - When Vds is applied, the voltage at each point along the x-axis changes with respect to Vgs − V(x), and this determines the current equation.
+  - At x = 0: Vgs = 1, V(x) = 0  ⇒ (Vgs - V(x) = 1).<br/> 
+    At x = Vds = 0.05  ⇒ (Vgs - V(x) = 0.95).
+  - Induced charge is proportional to the effective channel voltage ( Vgs- V(x)).
+    
+                                                                                                                                                        
  <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/77a3cccc-7699-4145-a0a0-f864fedc6522" />  <br/>
+
+
+ 
+ ## 5. Lecture-2  Drift current theory
+ 
+ Induced charge at any point x in the channel depends on the effective gate voltage.
+ <img width="300" height="400" alt="image" src="https://github.com/user-attachments/assets/170b037c-2adc-4538-966c-f208cf52ebbd" /> <br/>
+
+ 
+
+ <img width="300" height="400" alt="image" src="https://github.com/user-attachments/assets/db226874-837a-4b45-a0a8-7d61c0ef1e50" />
+
+
+ 
 
                                                                                                                                                                     
 
