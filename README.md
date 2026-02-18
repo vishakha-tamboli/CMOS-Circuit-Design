@@ -4,38 +4,36 @@
 
 
 1. Install VirtualBox <br/>
-
-          - Download and install VirtualBox from the official website: https://www.virtualbox.org/wiki/Downloads
+   - Download and install VirtualBox from the official website: https://www.virtualbox.org/wiki/Downloads
 
 2. Create a Virtual Machine <br/>
-
-          - Open VirtualBox
-          - Click New
-          - Set the following:
+   - Open VirtualBox
+   - Click New
+   - Set the following:
 
    | Setting |  Value |
    |-------- |--------|
    |Type	   |Linux   |
    |Version  |  Ubuntu 18.04 Bionic Beaver (64-bit) |
    
-          - Click Next
+   - Click Next
 
 4. Allocate Memory <br/>
 
-           - Assign RAM as needed (Recommended: 4096 MB)
-           - Click Next
+   - Assign RAM as needed (Recommended: 4096 MB)
+   - Click Next
 
 5. Attach CMOS VDI File
-             - Select Use an existing virtual hard disk file <br/>
-             - Click the folder icon <br/>
-             - Browse and select the unzipped CMOS VDI file <br/>
-              - Click Open → Next → Finish <br/>
+   - Select Use an existing virtual hard disk file
+   - Click the folder icon
+   - Browse and select the unzipped CMOS VDI file
+   - Click Open → Next → Finish <br/>
   
-  <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/09e775db-9f25-4d78-9b41-9a6fa2797949" /> <br/>
+- <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/09e775db-9f25-4d78-9b41-9a6fa2797949" /> <br/>
 
 5. Start the Virtual Machine <br/>
-          - Select the created VM <br/>
-          - Click Start
+   - Select the created VM
+   - Click Start
 
 
 ## Day 1 - Basics of NMOS drain current (Id) vs drain-to-source voltage(Vds) <br/>
@@ -216,11 +214,13 @@ after -
  we will see the "Resistive region"/"Linear Region" of operation by applying Drain-source voltage. If we keep on increasing the Gate-source voltage, the channel    width keeps on increasing.
  
 
- <img width="300" height="400" alt="Screenshot 2026-02-18 141437" src="https://github.com/user-attachments/assets/11e7e4f6-9632-4c1e-83b0-548751e68575" /> 
-                                                                                                                                                                    <img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/33bbd97c-3bd1-415e-a632-85c6f3c3d70e" />
- 
+ <img width="600" height="400" alt="Screenshot 2026-02-18 141437" src="https://github.com/user-attachments/assets/11e7e4f6-9632-4c1e-83b0-548751e68575" />  <br/>
+                                                                                                                                                                    <img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/33bbd97c-3bd1-415e-a632-85c6f3c3d70e" /> <br/>                                                                                                                                                                                               This indicates that the net induced charge is proportional to (Vgs − Vt). Now, let us apply a very small Vds initially. Assume Vt = 0.45 V, and keep Vgs also      small at the beginning.  
+                                                                                                                                                                
+                                                                                                                                            
+ <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/77a3cccc-7699-4145-a0a0-f864fedc6522" />  <br/>
 
- 
+                                                                                                                                                                    
 
 
 
