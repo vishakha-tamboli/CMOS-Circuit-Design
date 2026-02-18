@@ -1,7 +1,7 @@
 # CMOS-Circuit-Design and SPICE simulation using SKY130
 
 ## Day 1 - Basics of NMOS drain current (Id) vs drain-to-source voltage(Vds) <br/>
-## Lecture-1   Why do we need SPICE simulations?
+## 0. Lecture-1   Why do we need SPICE simulations?
 
 Circuit design involves arranging transistors  and resistors to create logic gates (AND, OR, NOT, NAND, NOR, XOR), which are then combined in a particular fashion to form complex, functional digital circuits like microprocessors. <br/>
 Example : 
@@ -62,7 +62,7 @@ By merging these responses, the overall CMOS inverter waveform is generated. SPI
 
 
 
- ## Lecture-2    Introduction to basic element in Circuit design – NMOS
+ ## 1. Lecture-2    Introduction to basic element in Circuit design – NMOS
  ### NMOS structure : 
 
 - 4 terminal Device
@@ -86,9 +86,11 @@ By merging these responses, the overall CMOS inverter waveform is generated. SPI
 - B – Body
 
  <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/ae7298a9-9096-41dc-8ace-e13aaa7b9e25" />  <br/>  
+
+ 
  
 
-  ## Lecture-3   Strong inversion and threshold voltage
+  ## 2. Lecture-3   Strong inversion and threshold voltage
    
  Initially -  
 - Vgs = 0
@@ -128,9 +130,45 @@ after -
 
 - Electrons from heavily doped ‘n+’ source region are drawn in region under gate ‘G’
 
-- Continuous n-channel formation from S-D, whose conductivity is modulated by ‘Vgs’
+- Continuous n-channel formation from S-D, whose conductivity is modulated by ‘Vgs’.
 
-- <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/5c67337a-9a60-4b19-8bdf-65f6ac4c241c" />
+when we change the potential of Body terminal.There will be increase in depletion region between source and body terminal.
+ 
+
+ <img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/5c67337a-9a60-4b19-8bdf-65f6ac4c241c" /> <br/>
+ 
+
+
+ 
+  ## 3. Lecture-4   Threshold voltage with positive substrate potential
+  
+  
+  when we increase Vgs,  the depletion region increase in both the cases. But, in second case as there is Vsb +ve, few charges from channel will be pulled towards the source. <br/>
+                              
+
+  <img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/3932925f-0ae3-4710-b48d-48f3ca2b74ce" />  <br/>
+
+  Because of this, the formation of surface inversion is slower in the second case. Therefore, an additional potential must be applied in the second case to achieve inversion.
+
+  <img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/39fc86c7-b6cb-4913-81c7-b2e8931d0f08" /> <br/>
+
+
+The threshold voltage (V_t)  increases when the source–body voltage (V_{SB}) is positive. This effect is called the **body effect**.
+]
+we see that (V_t) depends on the body-effect coefficient (\gamma), the Fermi potential (\phi_f), and the applied body bias (V_{SB}). When (V_{SB}) increases, more depletion charge forms in the substrate, so a higher gate voltage is required to create strong inversion and turn the device ON.
+
+The parameters such as Gamma comes from foundaries after simulation of which in SPICE we get the value for Vt (Threshold Voltage).
+  
+
+ <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/f294e8af-d5e9-4937-9a81-0286b7a673c5" />  <br/>
+ 
+
+
+  ## 4. Lecture-1   Resistive region of operation with small drain-source voltage
+  
+  
+
+
 
 
  
