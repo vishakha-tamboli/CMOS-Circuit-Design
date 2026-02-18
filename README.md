@@ -130,7 +130,7 @@ after -
 
 - Continuous n-channel formation from S-D, whose conductivity is modulated by ‘Vgs’
 
-- <img width="1207" height="605" alt="image" src="https://github.com/user-attachments/assets/5c67337a-9a60-4b19-8bdf-65f6ac4c241c" />
+- <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/5c67337a-9a60-4b19-8bdf-65f6ac4c241c" />
 
 
  
