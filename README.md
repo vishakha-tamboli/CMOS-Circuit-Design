@@ -237,12 +237,52 @@ after -
  
  ## 5. Lecture-2  Drift current theory
  
- Induced charge at any point x in the channel depends on the effective gate voltage.
+ Induced charge at any point x in the channel depends on the effective gate voltage. <br/>
+ 
  <img width="300" height="400" alt="image" src="https://github.com/user-attachments/assets/170b037c-2adc-4538-966c-f208cf52ebbd" /> <br/>
-
  
 
- <img width="300" height="400" alt="image" src="https://github.com/user-attachments/assets/db226874-837a-4b45-a0a8-7d61c0ef1e50" />
+
+ <img width="300" height="400" alt="image" src="https://github.com/user-attachments/assets/db226874-837a-4b45-a0a8-7d61c0ef1e50" /> <br/>
+
+ -  εox is the oxide permittivity = 3.97εo = 3.510e-11 F/m
+ -  tox is the oxide thickness,Comes from the technology node.
+
+
+  <img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/8bd995d0-5b39-4c03-bb17-34903979abcb" />  <br/>
+  
+   Here we will talk abour drift current , there is Drift current as there is potential difference across the channel. <br/>
+   To observe the actual channel width, we need to look at the top view :
+ 
+   <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/a42f8647-4e9c-49ad-9e73-5e3e12bd5b7f" />
+   
+
+
+   ## 6. Lecture-3 Drain current model for linear region of operation
+
+   -  Voltage varies along the channel length.
+
+   -  This causes the carrier velocity to change along the channel.
+
+   -  Carrier velocity depends on mobility and electric field
+
+ 
+      <img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/620d51c2-1f0b-4934-b168-676bae9f03cc" />
+
+  
+   - dx limits: 0 → L - covers the entire channel length.
+   - dV limits: 0 → (Vds) - voltage rises from source (0) to drain (Vds) along the channel. <br/>
+   
+     We integrate over these limits to calculate total current through the full channel.
+     
+
+
+
+   
+
+   
+
+
 
 
  
