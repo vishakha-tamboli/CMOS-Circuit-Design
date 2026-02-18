@@ -1,5 +1,43 @@
 # CMOS-Circuit-Design and SPICE simulation using SKY130
 
+### VirtualBox Setup
+
+
+1. Install VirtualBox <br/>
+
+          - Download and install VirtualBox from the official website: https://www.virtualbox.org/wiki/Downloads
+
+2. Create a Virtual Machine <br/>
+
+          - Open VirtualBox
+          - Click New
+          - Set the following:
+
+   | Setting |  Value |
+   |-------- |--------|
+   |Type	   |Linux   |
+   |Version  |  Ubuntu 18.04 Bionic Beaver (64-bit) |
+   
+          - Click Next
+
+4. Allocate Memory <br/>
+
+          - Assign RAM as needed (Recommended: 4096 MB)
+          - Click Next
+
+5. Attach CMOS VDI File
+          - Select Use an existing virtual hard disk file <br/>
+          - Click the folder icon <br/>
+          - Browse and select the unzipped CMOS VDI file <br/>
+          - Click Open → Next → Finish <br/>
+  
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/09e775db-9f25-4d78-9b41-9a6fa2797949" /> <br/>
+
+5. Start the Virtual Machine <br/>
+          - Select the created VM <br/>
+          - Click Start
+
+
 ## Day 1 - Basics of NMOS drain current (Id) vs drain-to-source voltage(Vds) <br/>
 ## 0. Lecture-1   Why do we need SPICE simulations?
 
@@ -153,18 +191,18 @@ when we change the potential of Body terminal.There will be increase in depletio
   <img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/39fc86c7-b6cb-4913-81c7-b2e8931d0f08" /> <br/>
 
 
-The threshold voltage (V_t)  increases when the source–body voltage (V_{SB}) is positive. This effect is called the **body effect**.
-]
-we see that (V_t) depends on the body-effect coefficient (\gamma), the Fermi potential (\phi_f), and the applied body bias (V_{SB}). When (V_{SB}) increases, more depletion charge forms in the substrate, so a higher gate voltage is required to create strong inversion and turn the device ON.
+  
+  we see that (V_t) depends on the body-effect coefficient (\gamma), the Fermi potential (\phi_f), and the applied body bias (V_{SB}). When (V_{SB}) increases, more depletion charge forms in the substrate, so a    higher gate voltage is required to create strong inversion and turn the device ON.
 
-The parameters such as Gamma comes from foundaries after simulation of which in SPICE we get the value for Vt (Threshold Voltage).
+  The parameters such as Gamma comes from foundaries after simulation of which in SPICE we get the value for Vt (Threshold Voltage).
   
 
- <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/f294e8af-d5e9-4937-9a81-0286b7a673c5" />  <br/>
+  <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/f294e8af-d5e9-4937-9a81-0286b7a673c5" />  <br/>
  
 
 
   ## 4. Lecture-1   Resistive region of operation with small drain-source voltage
+  
   
   
 
