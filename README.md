@@ -10,6 +10,7 @@
    - Open VirtualBox
    - Click New
    - Set the following:
+   - 
 
    | Setting |  Value |
    |-------- |--------|
@@ -29,7 +30,7 @@
    - Browse and select the unzipped CMOS VDI file
    - Click Open → Next → Finish <br/>
   
-- <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/09e775db-9f25-4d78-9b41-9a6fa2797949" /> <br/>
+   <img width="500" height="500" alt="Screenshot 2026-02-19 092517" src="https://github.com/user-attachments/assets/d2a58f1e-c8c5-491d-b434-b8cdb04c108d" />
 
 5. Start the Virtual Machine <br/>
    - Select the created VM
@@ -274,6 +275,42 @@ after -
    - dV limits: 0 → (Vds) - voltage rises from source (0) to drain (Vds) along the channel. <br/>
    
      We integrate over these limits to calculate total current through the full channel.
+
+     <img width="300" height="400" alt="image" src="https://github.com/user-attachments/assets/a3fc9ad7-25af-4d46-a84e-f387e71584aa" />
+  - Current is not purely linear in Vds , The presence of the Vds^2/2 term makes ID non-linear with Vds, even in the so-called linear  region.
+  - Instead of writing μnCox repeatedly, we define kn′ = μnCox. This is called process transconductance, since it depends only on fabrication technology.
+  - Then we combine geometry (W/L) with kn′: kn = kn′(W/L). This simplifies the drain current equation.
+
+    <img width="300" height="200" alt="Screenshot 2026-02-19 100345" src="https://github.com/user-attachments/assets/fc126ca7-830e-4abd-bf22-db41b8c1c554" />
+
+    
+    the equation is still nonlinear because the Vds^2/2 term is still present.
+
+    <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/65cf2973-2189-47a3-a095-ca15d11acc23" />
+
+    ## 7. Lecture-4  SPICE conclusion to resistive operation
+
+    
+
+  
+
+
+    
+
+    
+
+
+     
+
+
+
+
+
+
+	​
+
+​
+
      
 
 
