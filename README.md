@@ -290,6 +290,48 @@ after -
 
     ## 7. Lecture-4  SPICE conclusion to resistive operation
 
+     We want to study how Vds and Vgs affect the drain current. For this, we take different values of Vgs and Vds. When varying Vgs, the device stays in the linear region only if( Vgs - Vt​ )>= Vds.
+     Vds can be sweeped from 0V to (Vgs-Vt)V to make the device work in linear region of operation.
+
+
+
+    <img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/837eb632-eb40-4a1b-a64b-dc09dd09583b" />
+
+    ## 8. Lecture-5  Pinch-off region condition
+
+    The chanel voltage is denoted with Vgs-Vds
+
+    - There is  region of operation that occurs when the drain–source voltage becomes greater than ( Vgs - Vt​ ), known as the saturation region. Since the channel voltage is (Vgs - Vds), we now increase Vds.<br/>
+      When Vgs-Vds is greater than Vt, there will be a conducting channel.
+      
+
+
+     <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/92294654-2873-4550-9df1-494fda66eac3" />
+	 
+
+    - Pinch-off condition is when Vgs-Vds=Vt
+       When the pinch-off phenomenon begins, the channel starts to disappear. Initially, the channel vanishes from the drain side, forming a triangular shape.
+      
+
+     <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/c743df5a-66c9-4cb8-af39-33208772789c" />
+
+	 
+
+
+	 
+
+	
+	
+
+
+     
+
+	
+
+    
+
+    
+
     
 
   
