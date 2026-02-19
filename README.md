@@ -301,7 +301,7 @@ after -
 
     The chanel voltage is denoted with Vgs-Vds.
     
-    - There is  region of operation that occurs when the drain–source voltage becomes greater than ( Vgs - Vt​ ), known as the saturation region. Since the channel       voltage is (Vgs - Vds), we now increase Vds.<br/>
+    - There is  region of operation that occurs when the drain–source voltage becomes greater than ( Vgs - Vt​ ), known as the saturation region. Since the channel       voltage is (Vgs - Vds), we now increase          Vds.<br/>
       When Vgs-Vds is greater than Vt, there will be a conducting channel.
       
 
@@ -315,7 +315,7 @@ after -
 	 
 
      - When  Vgs-Vds<Vt, the inversion layer vanishes near the drain, causing the channel to disappear at the drain side.
-     - 
+       
    
      <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/f5c55421-ff86-4703-aa0d-94bded8ca128" />
 
