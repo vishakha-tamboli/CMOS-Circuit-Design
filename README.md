@@ -10,7 +10,7 @@
    - Open VirtualBox
    - Click New
    - Set the following:
-   - 
+    
 
    | Setting |  Value |
    |-------- |--------|
@@ -284,76 +284,117 @@ after -
     <img width="300" height="200" alt="Screenshot 2026-02-19 100345" src="https://github.com/user-attachments/assets/fc126ca7-830e-4abd-bf22-db41b8c1c554" />
 
     
-    the equation is still nonlinear because the Vds^2/2 term is still present.
 
-    <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/65cf2973-2189-47a3-a095-ca15d11acc23" />
+   the equation is still nonlinear because the Vds^2/2 term is still present.
 
-    ## 7. Lecture-4  SPICE conclusion to resistive operation
+    
+   <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/65cf2973-2189-47a3-a095-ca15d11acc23" />
 
-     We want to study how Vds and Vgs affect the drain current. For this, we take different values of Vgs and Vds. When varying Vgs, the device stays in the linear region only if( Vgs - Vt​ )>= Vds.
-     Vds can be sweeped from 0V to (Vgs-Vt)V to make the device work in linear region of operation.
+  ## 7. Lecture-4  SPICE conclusion to resistive operation
+
+  We want to study how Vds and Vgs affect the drain current. For this, we take different values of Vgs and Vds. When varying Vgs, the device stays in the            linear region only if( Vgs - Vt​ )>= Vds.
+  Vds can be sweeped from 0V to (Vgs-Vt)V to make the device work in linear region of operation.
 
 
 
-    <img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/837eb632-eb40-4a1b-a64b-dc09dd09583b" />
-	
+ <img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/837eb632-eb40-4a1b-a64b-dc09dd09583b" />
 
-    ## 8. Lecture-5  Pinch-off region condition
 
-       The chanel voltage is denoted with Vgs-Vds.
-     - There is  region of operation that occurs when the drain–source voltage becomes greater than ( Vgs - Vt​ ), known as the saturation region. Since the channel  voltage is (Vgs - Vds), we now increase               Vds.<br/>
-       When Vgs-Vds is greater than Vt, there will be a conducting channel.<br/>
+ ## 8. Lecture-5  Pinch-off region condition
+
+  The chanel voltage is denoted with Vgs-Vds.
+- There is  region of operation that occurs when the drain–source voltage becomes greater than ( Vgs - Vt​ ), known as the saturation region. Since the               channel  voltage is (Vgs - Vds), we now increase Vds.<br/>
+  When Vgs-Vds is greater than Vt, there will be a conducting channel.<br/>
       
 
 
-     <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/92294654-2873-4550-9df1-494fda66eac3" /><br/>
+  <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/92294654-2873-4550-9df1-494fda66eac3" /><br/>
 	 
 	 
-     - Pinch-off condition starts when Vgs-Vds=Vt When the pinch-off phenomenon begins, the channel starts to disappear. Initially, the channel vanishes from the drain side, forming a triangular shape.<br/>
+ - Pinch-off condition starts when Vgs-Vds=Vt When the pinch-off phenomenon begins, the channel starts to disappear. Initially, the channel vanishes from the         drain side, forming a triangular shape.<br/>
    
       
-     <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/1c231569-e037-4eb6-aa1c-0af2473adc8e" /> <br/>
+   <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/1c231569-e037-4eb6-aa1c-0af2473adc8e" /> <br/>
    
    
-     - When  Vgs-Vds<Vt, the inversion layer vanishes near the drain, causing the channel to disappear at the drain side . <br/>
+  - When  Vgs-Vds<Vt, the inversion layer vanishes near the drain, causing the channel to disappear at the drain side . <br/>
    
    
-     <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/f5c55421-ff86-4703-aa0d-94bded8ca128" /> <br/>
+    <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/f5c55421-ff86-4703-aa0d-94bded8ca128" /> <br/>
 
 
-     ## 9. Lecture-6  Drain current model for saturation region of operation
+    ## 9. Lecture-6  Drain current model for saturation region of operation
 
-     This condition is called the saturation region, where the device becomes saturated and no further increase in drain current occurs despite increasing the drain–source voltage.
+    This condition is called the saturation region, where the device becomes saturated and no further increase in drain current occurs despite increasing the          drain–source voltage.
 
-     <img width="300" height="200" alt="Screenshot 2026-02-20 000206" src="https://github.com/user-attachments/assets/bba6c59e-03fa-4cda-8a63-627e0fc5c824" />
+    <img width="300" height="200" alt="Screenshot 2026-02-20 000206" src="https://github.com/user-attachments/assets/bba6c59e-03fa-4cda-8a63-627e0fc5c824" />
 
-      In the saturation region, the channel voltage remains fixed at (Vgs − Vt), and the drain current becomes independent of Vds. To obtain the drain current equation in this region, Vds is replaced by (Vgs −         Vt).
+    In the saturation region, the channel voltage remains fixed at (Vgs − Vt), and the drain current becomes independent of Vds. To obtain the drain current           equation in this region, Vds is replaced by (Vgs − Vt).
 
 
-      <img width="700" height="500" alt="Screenshot 2026-02-19 235606" src="https://github.com/user-attachments/assets/57d42bb2-31cf-4963-898a-5ad0fe54cbc8" />
+    <img width="700" height="500" alt="Screenshot 2026-02-19 235606" src="https://github.com/user-attachments/assets/57d42bb2-31cf-4963-898a-5ad0fe54cbc8" />
 
-     - As Vds increases, the depletion region near the drain expands.
-     - This expansion **reduces the effective conductive channel length** (channel becomes slightly shorter).
-     - Because of this effect, the current is **not perfectly constant** in saturation (so it is not an ideal current source).
-     - The small increase in current with **Vds** is called **channel length modulation**.
-     - Due to channel length modulation, drain current slightly increases even in saturation.
-     - A more accurate drain current equation including this effect is:
+    - As Vds increases, the depletion region near the drain expands.
+    - This expansion **reduces the effective conductive channel length** (channel becomes slightly shorter).
+    - Because of this effect, the current is **not perfectly constant** in saturation (so it is not an ideal current source).
+    - The small increase in current with **Vds** is called **channel length modulation**.
+    - Due to channel length modulation, drain current slightly increases even in saturation.
+    - A more accurate drain current equation including this effect is:
        
-        <img width="200" height="50" alt="image" src="https://github.com/user-attachments/assets/eda1685e-e333-40f4-9b76-cf2b81029ca3" />
+    <img width="200" height="50" alt="image" src="https://github.com/user-attachments/assets/eda1685e-e333-40f4-9b76-cf2b81029ca3" />
 
  
-     - Here, λ (lambda) represents the channel length modulation parameter.
+    - Here, λ (lambda) represents the channel length modulation parameter.
 
 
 
-      <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/5f9a7f30-1260-473f-b920-12eb5a383913" />  <br/>
+    <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/5f9a7f30-1260-473f-b920-12eb5a383913" />  <br/>
 
 	  
 	  
 
 
 
-      ## 10. Lecture-1  Basic SPICE setup
+   ## 10. Lecture-1  Basic SPICE setup
+
+     
+   - In SPICE simulation, we provide model parameters (device physics parameters like (V_{t0}), mobility, (k_n), (\lambda), etc.).
+
+   - We also provide the netlist, which defines the circuit connections, transistor sizes (W/L), and input sources.
+
+   - SPICE uses these parameters and equations internally to solve the circuit numerically.
+
+   - It generates voltage and current waveforms at different nodes of the circuit.
+
+   - From these waveforms (input and output transitions), we calculate the propagation delay of the device.
+
+   - Hence, SPICE gives realistic delay values based on actual device physics and circuit conditions.
+
+
+   <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/83067699-6dbe-4b2e-afae-57650e5f3ce7" />
+
+
+
+   ## 11. Lecture-2  Circuit description in SPICE syntax
+
+
+
+   <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/3a5007e6-a655-4c91-aa07-9f4941c8833c" />
+
+
+
+
+   
+
+
+
+
+	
+
+
+
+	
+
 
 
 
