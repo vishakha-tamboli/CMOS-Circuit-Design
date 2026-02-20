@@ -277,11 +277,11 @@ after -
      We integrate over these limits to calculate total current through the full channel.
 
      <img width="300" height="400" alt="image" src="https://github.com/user-attachments/assets/a3fc9ad7-25af-4d46-a84e-f387e71584aa" />
-  - Current is not purely linear in Vds , The presence of the Vds^2/2 term makes ID non-linear with Vds, even in the so-called linear  region.
-  - Instead of writing μnCox repeatedly, we define kn′ = μnCox. This is called process transconductance, since it depends only on fabrication technology.
-  - Then we combine geometry (W/L) with kn′: kn = kn′(W/L). This simplifies the drain current equation.
+   - Current is not purely linear in Vds , The presence of the Vds^2/2 term makes ID non-linear with Vds, even in the so-called linear  region.
+   - Instead of writing μnCox repeatedly, we define kn′ = μnCox. This is called process transconductance, since it depends only on fabrication technology.
+   - Then we combine geometry (W/L) with kn′: kn = kn′(W/L). This simplifies the drain current equation.
 
-    <img width="300" height="200" alt="Screenshot 2026-02-19 100345" src="https://github.com/user-attachments/assets/fc126ca7-830e-4abd-bf22-db41b8c1c554" />
+   <img width="300" height="200" alt="Screenshot 2026-02-19 100345" src="https://github.com/user-attachments/assets/fc126ca7-830e-4abd-bf22-db41b8c1c554" />
 
     
 
@@ -297,58 +297,55 @@ after -
 
 
 
- <img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/837eb632-eb40-4a1b-a64b-dc09dd09583b" />
+  <img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/837eb632-eb40-4a1b-a64b-dc09dd09583b" />
 
 
- ## 8. Lecture-5  Pinch-off region condition
+  ## 8. Lecture-5  Pinch-off region condition
 
-  The chanel voltage is denoted with Vgs-Vds.
-- There is  region of operation that occurs when the drain–source voltage becomes greater than ( Vgs - Vt​ ), known as the saturation region. Since the               channel  voltage is (Vgs - Vds), we now increase Vds.<br/>
-  When Vgs-Vds is greater than Vt, there will be a conducting channel.<br/>
+   The chanel voltage is denoted with Vgs-Vds.
+  - There is  region of operation that occurs when the drain–source voltage becomes greater than ( Vgs - Vt​ ), known as the saturation region. Since the               channel  voltage is (Vgs - Vds), we now increase Vds.<br/>
+    When Vgs-Vds is greater than Vt, there will be a conducting channel. <br/>
       
 
 
-  <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/92294654-2873-4550-9df1-494fda66eac3" /><br/>
+   <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/92294654-2873-4550-9df1-494fda66eac3" /><br/>
 	 
 	 
- - Pinch-off condition starts when Vgs-Vds=Vt When the pinch-off phenomenon begins, the channel starts to disappear. Initially, the channel vanishes from the         drain side, forming a triangular shape.<br/>
+  - Pinch-off condition starts when Vgs-Vds=Vt When the pinch-off phenomenon begins, the channel starts to disappear. Initially, the channel vanishes from the         drain side, forming a triangular shape.<br/>
    
       
    <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/1c231569-e037-4eb6-aa1c-0af2473adc8e" /> <br/>
    
    
-  - When  Vgs-Vds<Vt, the inversion layer vanishes near the drain, causing the channel to disappear at the drain side . <br/>
+   - When  Vgs-Vds<Vt, the inversion layer vanishes near the drain, causing the channel to disappear at the drain side . <br/>
    
    
     <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/f5c55421-ff86-4703-aa0d-94bded8ca128" /> <br/>
 
 
-    ## 9. Lecture-6  Drain current model for saturation region of operation
-
-    This condition is called the saturation region, where the device becomes saturated and no further increase in drain current occurs despite increasing the          drain–source voltage.
-
-    <img width="300" height="200" alt="Screenshot 2026-02-20 000206" src="https://github.com/user-attachments/assets/bba6c59e-03fa-4cda-8a63-627e0fc5c824" />
-
+   ## 9. Lecture-6  Drain current model for saturation region of operation
+   This condition is called the saturation region, where the device becomes saturated and no further increase in drain current occurs despite increasing the          drain–source voltage. 
+   
+  <img width="300" height="200" alt="Screenshot 2026-02-20 000206" src="https://github.com/user-attachments/assets/bba6c59e-03fa-4cda-8a63-627e0fc5c824" 
     In the saturation region, the channel voltage remains fixed at (Vgs − Vt), and the drain current becomes independent of Vds. To obtain the drain current           equation in this region, Vds is replaced by (Vgs − Vt).
-
-
-    <img width="700" height="500" alt="Screenshot 2026-02-19 235606" src="https://github.com/user-attachments/assets/57d42bb2-31cf-4963-898a-5ad0fe54cbc8" />
+	
+  <img width="700" height="500" alt="Screenshot 2026-02-19 235606" src="https://github.com/user-attachments/assets/57d42bb2-31cf-4963-898a-5ad0fe54cbc8" />
 
     - As Vds increases, the depletion region near the drain expands.
-    - This expansion **reduces the effective conductive channel length** (channel becomes slightly shorter).
-    - Because of this effect, the current is **not perfectly constant** in saturation (so it is not an ideal current source).
-    - The small increase in current with **Vds** is called **channel length modulation**.
+    - This expansion reduces the effective conductive channel length (channel becomes slightly shorter).
+    - Because of this effect, the current is not perfectly constant in saturation (so it is not an ideal current source).
+    - The small increase in current with Vds is called channel length modulation.
     - Due to channel length modulation, drain current slightly increases even in saturation.
     - A more accurate drain current equation including this effect is:
        
-    <img width="200" height="50" alt="image" src="https://github.com/user-attachments/assets/eda1685e-e333-40f4-9b76-cf2b81029ca3" />
+  <img width="200" height="50" alt="image" src="https://github.com/user-attachments/assets/eda1685e-e333-40f4-9b76-cf2b81029ca3" />
 
  
     - Here, λ (lambda) represents the channel length modulation parameter.
 
 
 
-    <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/5f9a7f30-1260-473f-b920-12eb5a383913" />  <br/>
+   <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/5f9a7f30-1260-473f-b920-12eb5a383913" />  <br/>
 
 	  
 	  
@@ -356,12 +353,11 @@ after -
 
 
    ## 10. Lecture-1  Basic SPICE setup
-
-     
+   
    - In SPICE simulation, we provide model parameters (device physics parameters like (V_{t0}), mobility, (k_n), (\lambda), etc.).
 
    - We also provide the netlist, which defines the circuit connections, transistor sizes (W/L), and input sources.
-
+     
    - SPICE uses these parameters and equations internally to solve the circuit numerically.
 
    - It generates voltage and current waveforms at different nodes of the circuit.
@@ -377,9 +373,62 @@ after -
 
    ## 11. Lecture-2  Circuit description in SPICE syntax
 
+   ##### Define Nodes
+
+   A node is a point where two or more terminals are electrically connected. If two terminals of the same device are short-circuited, they form a single node         between them. In most cases, a node connects terminals of different devices.
+
+   To identify nodes in a circuit, observe all the wires connecting components—each continuous wire represents one node. These node names are then used while         writing the SPICE netlist.
+
+
 
 
    <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/3a5007e6-a655-4c91-aa07-9f4941c8833c" />
+
+
+   ##### MOSFET Syntax
+
+   The order of writing is: Drain, Gate, Source, Substrate
+   Mname Drain Gate Source Substrate Model W= L=
+
+   <img width="700" height="300" alt="image" src="https://github.com/user-attachments/assets/69830e49-9e7f-4006-b508-a99d0d91fa64" />
+
+
+   ##### Resistor Syntax
+
+   A resistor is connected between two nodes.
+
+   Rname Node1 Node2 Value
+   
+   <img width="700" height="300" alt="image" src="https://github.com/user-attachments/assets/f2174825-ee34-4cfd-a471-993cc9b0abce" />
+
+   ##### Voltage Sources
+
+   Voltage sources are written between a node and ground
+
+   Vname PositiveNode NegativeNode Value
+
+   <img width="700" height="300" alt="image" src="https://github.com/user-attachments/assets/1cc7dce1-46ff-4232-9d50-d65390df7c85" />
+   
+
+
+   ## 12. Lecture-3  Define technology parameters
+
+
+   
+
+
+   
+
+   
+
+
+   
+
+
+   
+
+   
+
 
 
 
