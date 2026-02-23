@@ -320,28 +320,30 @@ after -
    - When  Vgs-Vds<Vt, the inversion layer vanishes near the drain, causing the channel to disappear at the drain side . <br/>
    
    
-    <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/f5c55421-ff86-4703-aa0d-94bded8ca128" /> <br/>
+   <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/f5c55421-ff86-4703-aa0d-94bded8ca128" /> <br/>
 
 
    ## 9. Lecture-6  Drain current model for saturation region of operation
-   This condition is called the saturation region, where the device becomes saturated and no further increase in drain current occurs despite increasing the          drain–source voltage. 
+
    
-  <img width="300" height="200" alt="Screenshot 2026-02-20 000206" src="https://github.com/user-attachments/assets/bba6c59e-03fa-4cda-8a63-627e0fc5c824" 
-    In the saturation region, the channel voltage remains fixed at (Vgs − Vt), and the drain current becomes independent of Vds. To obtain the drain current           equation in this region, Vds is replaced by (Vgs − Vt).
+   This condition is called the saturation region, where the device becomes saturated and no further increase in drain current occurs despite increasing the drain–source voltage. <br/>
+   
+  <img width="300" height="200" alt="Screenshot 2026-02-20 000206" src="https://github.com/user-attachments/assets/bba6c59e-03fa-4cda-8a63-627e0fc5c824"/> 
+    In the saturation region, the channel voltage remains fixed at (Vgs − Vt), and the drain current becomes independent of Vds. To obtain the drain current  equation in this region, Vds is replaced by (Vgs − Vt).
 	
   <img width="700" height="500" alt="Screenshot 2026-02-19 235606" src="https://github.com/user-attachments/assets/57d42bb2-31cf-4963-898a-5ad0fe54cbc8" />
 
-    - As Vds increases, the depletion region near the drain expands.
-    - This expansion reduces the effective conductive channel length (channel becomes slightly shorter).
-    - Because of this effect, the current is not perfectly constant in saturation (so it is not an ideal current source).
-    - The small increase in current with Vds is called channel length modulation.
-    - Due to channel length modulation, drain current slightly increases even in saturation.
-    - A more accurate drain current equation including this effect is:
+  - As Vds increases, the depletion region near the drain expands.
+  - This expansion reduces the effective conductive channel length (channel becomes slightly shorter).
+  - Because of this effect, the current is not perfectly constant in saturation (so it is not an ideal current source).
+  - The small increase in current with Vds is called channel length modulation.
+  - Due to channel length modulation, drain current slightly increases even in saturation.
+  - A more accurate drain current equation including this effect is:
        
   <img width="200" height="50" alt="image" src="https://github.com/user-attachments/assets/eda1685e-e333-40f4-9b76-cf2b81029ca3" />
 
  
-    - Here, λ (lambda) represents the channel length modulation parameter.
+  - Here, λ (lambda) represents the channel length modulation parameter.
 
 
 
