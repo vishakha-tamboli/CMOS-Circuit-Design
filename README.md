@@ -185,13 +185,13 @@ after -
 
   <img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/3932925f-0ae3-4710-b48d-48f3ca2b74ce" />  <br/>
 
-  Because of this, the formation of surface inversion is slower in the second case. Therefore, an additional potential must be applied in the second case to         achieve inversion.
+  Because of this, the formation of surface inversion is slower in the second case. Therefore, an additional potential must be applied in the second case to achieve inversion.
 
   <img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/39fc86c7-b6cb-4913-81c7-b2e8931d0f08" /> <br/>
 
 
   
-  we see that (V_t) depends on the body-effect coefficient (\gamma), the Fermi potential (\phi_f), and the applied body bias (V_{SB}). When (V_{SB}) increases,      more depletion charge forms in the substrate, so a    higher gate voltage is required to create strong inversion and turn the device ON.
+  we see that (V_t) depends on the body-effect coefficient (\gamma), the Fermi potential (\phi_f), and the applied body bias (V_{SB}). When (V_{SB}) increases, more depletion charge forms in the substrate, so a    higher gate voltage is required to create strong inversion and turn the device ON.
 
   The parameters such as Gamma comes from foundaries after simulation of which in SPICE we get the value for Vt (Threshold Voltage).
   
@@ -536,6 +536,83 @@ after -
 
 
   ## 14. Lecture-5  SPICE Lab with sky130 models
+
+  
+ - When you click on any point on the plotted curve, the corresponding values are displayed in the terminal window.
+
+ - As shown in the image, the terminal displays x0 and y0 values for the selected point.
+  
+ - The y0  value represents the drain current (Id), and the x0 value represents the corresponding voltage at that point on the graph.
+
+
+  <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/f8ac9381-20c6-4901-840f-2747cceb5bc7" /> <br/>
+  
+
+  
+
+
+  ## Day 2 - Velocity saturation and basics of CMOS inverter VTC  <br/>
+  
+  ## 1. SPICE simulation for lower nodes and velocity saturation effect
+
+
+  ## 15. Lecture-1   SPICE simulation for lower nodes
+
+ - In the graph, the region to the left of the curve (Vds = Vgs − Vt) represents the Linear (Triode) region, where the drain current increases almost linearly with Vds.
+
+- The region to the right of the curve represents the Saturation region, where the current becomes nearly constant, with only a slight increase due to velocity saturation effects.
+
+- The bottom region, where the current is almost zero, represents the Cut-off region.
+
+- In these different regions, the MOSFET behaves completely differently in terms of current    conduction and operation.
+
+- This behavior corresponds to a long channel device condition.
+
+
+ <img width="700" height="500  " alt="image" src="https://github.com/user-attachments/assets/948fb57e-beef-4f7c-960c-c449e04cb519" />
+
+
+ Now we will take lower node case 
+
+ <img width="200" height="56" alt="image" src="https://github.com/user- attachments/assets/85a907c5-e27b-4dcb-a9df-997267c1964c" />
+
+ For this will take new SPICE dec , but diffrence between this new and previos one is only that now W and L values are changed
+
+
+  <img width="300 " height="200" alt="image" src="https://github.com/user-attachments/assets/7cd7e428-e848-489a-a491-44be92e8c9f8" />
+
+
+    
+
+
+  
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+  
+
+  
+
+  
+
+
+  
 
   
 
