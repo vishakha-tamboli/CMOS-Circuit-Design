@@ -416,6 +416,71 @@ after -
    ## 12. Lecture-3  Define technology parameters
 
 
+   ### Important Note About Model Name in SPICE
+  - The model name given in the `.MODEL` statement must be exactly the same as the name used in the MOSFET instance line.
+
+  - For example:
+
+  ```
+  .MODEL nmos NMOS ( ... )
+  ```
+
+  Then in the transistor line we must write:
+
+  ```
+  M1 vdd n1 0 0 nmos W=1.8u L=1.2u
+  ```
+
+ - The name **`nmos`** should match in both places.
+
+ - If the names are different, SPICE will not recognize the model and the simulation will give an error.
+
+  <img width="300" height="200" alt="Screenshot 2026-02-22 221226" src="https://github.com/user-attachments/assets/bf04c693-72a3-4788-9914-0e4d6d1ee9eb" />
+
+
+ - The brackets in the `.MODEL` statement contain the technology parameters of the NMOS device.
+
+ - Similarly, the PMOS model also includes its respective technology parameters inside its brackets.
+
+
+ <img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/37116cc4-8306-4a72-8d12-8188d4d73860" />
+
+
+  Now, we save these model definitions into a `.mod` file and then include this packaged file in the top-level SPICE netlist for simulation.
+  
+
+  <img width="700" height="400" alt="image" src="https://github.com/user-attachments/assets/ce8e14f4-2adc-410e-ba41-605e40f1b0d8" />
+
+
+ - The netlist defines the MOSFET (M1), resistor (R1), and voltage sources (Vdd, Vin) with their node connections and values.
+
+ - The MOSFET uses a technology model file included through the `.LIB` statement.
+
+ -  The model file contains the CMOS device parameters required for accurate simulation.
+ -  For simulation, we sweep the values of  Vgs or Vds to obtain the device characteristics.
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+ 
+
+
+
+ 
+
+
+
+
    
 
 
