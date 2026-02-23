@@ -482,7 +482,92 @@ after -
 
  - We can observe all the model parameters that are required for the fabrication process.
 
- <img width="700" height="600" alt="image" src="https://github.com/user-attachments/assets/a8245523-1a47-4d47-b878-07038aec4fa7" />
+ <img width="700" height="600" alt="image" src="https://github.com/user-attachments/assets/a8245523-1a47-4d47-b878-07038aec4fa7" />  <br/>
+ 
+
+ <img width="700" height="300" alt="image" src="https://github.com/user-attachments/assets/a5c88a30-393b-47d0-ac47-1ec1f9300192" /><br/>
+ 
+
+ <img width="700" height="300" alt="image" src="https://github.com/user-attachments/assets/55af8304-09cf-4643-ac43-cca80cdb3670" />
+
+  Various predefined values of W (width) and L (length) are available in the library. For the simulation, we can choose any one of the listed W and L combinations provided.
+
+
+ <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/a5945537-0c3f-41d0-a285-52e20eb13438" />
+
+
+
+
+- Navigate to the models directory and open the lib.spice file.
+
+- Inside it, you will find the library files for both nfet and pfet devices.
+
+
+
+ <img width="700" height="300" alt="image" src="https://github.com/user-attachments/assets/53efbeeb-946e-45c2-ab2d-cca60c1ff35a" />
+ 
+ - The file also contains different process corner libraries, such as Typical (TT), Slow-Fast (SF) and Fast-Fast (FF) corners.
+
+ <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/6cf2e101-a8ce-4028-b208-3ac1e4bf721e" />
+
+ Inside design --> open day1 file.
+
+
+ 
+ <img width="700" height="500" alt="Screenshot 2026-02-23 141443" src="https://github.com/user-attachments/assets/7a6ebc7b-24ae-497f-85fe-bc78397c6cee" />
+
+ - Here,Vdd is swept from 0 V to 1.8 V with a step size of 0.1 V.
+
+ - Vgs is varied from 0 V to 1.8 V with a step size of 0.2 V.
+
+ - Now, we proceed to perform the SPICE simulations.
+
+ <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/6e6b9e5a-33d6-4028-8014-293460c5abde" /> <br/>
+
+ <img width="200" height="50" alt="image" src="https://github.com/user-attachments/assets/b1d8d7f9-3fd4-4030-884c-7db92f84390a" /><br/>
+
+ <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/171875b8-4d82-4616-9dd2-dc7a6b0c0e9f" />
+
+ - To check the value of Id at any specific point on the curve, left-click on the desired point.
+
+ - The terminal window will display the corresponding coordinates as x0 and y0.
+
+ - The y0 value represents the drain current Id in amperes.
+
+
+  ## 14. Lecture-5  SPICE Lab with sky130 models
+
+  
+
+
+ 
+
+   
+
+ 
+
+
+
+
+
+   
+
+
+
+
+ 
+
+ 
+
+ 
+
+
+
+ 
+
+ 
+
+
 
 
  
