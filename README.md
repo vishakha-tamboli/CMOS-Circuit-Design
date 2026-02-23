@@ -578,8 +578,50 @@ after -
 
  For this will take new SPICE dec , but diffrence between this new and previos one is only that now W and L values are changed
 
+  
+  
+ <img width="300 " height="200" alt="image" src="https://github.com/user-attachments/assets/7cd7e428-e848-489a-a491-44be92e8c9f8" />
 
-  <img width="300 " height="200" alt="image" src="https://github.com/user-attachments/assets/7cd7e428-e848-489a-a491-44be92e8c9f8" />
+ Difference between Small Node and Large Node MOSFET Output Characteristics
+
+1. In the small node device, a slight step or abrupt increase in drain current is observed near the cutoff region, while the large node device shows a smoother transition.
+
+2. In the saturation region, the spacing between the ( I_D ) curves is nearly the same in both graphs.
+
+3. The drain current ( I_D ) magnitude is different for both devices; the large node device shows higher current compared to the small node device.
+
+
+
+
+
+
+
+  <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/34231483-6c77-4ab2-9020-0504ee44787d" />
+
+
+
+ ## 16. Lecture-2   Drain current vs gate voltage for long and short channel device
+
+
+   
+
+ 
+
+
+
+   
+
+
+
+
+  
+
+
+  
+
+
+
+  
 
 
     
