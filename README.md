@@ -460,6 +460,46 @@ after -
  -  For simulation, we sweep the values of  Vgs or Vds to obtain the device characteristics.
 
 
+  ## 13. Lecture-4  First SPICE simulation
+  
+  Open VirtualBox and navigate to the required directory using the cd command.
+
+  Clone the repository using:
+  - git clone https://github.com/kunalg123/sky130CircuitDesignWorkshop.git
+
+  <img width="700" height="200" alt="image" src="https://github.com/user-attachments/assets/dd6dda73-3cc9-41c8-bab9-7b9171084958" />
+
+  
+<img width="700" height="300" alt="image" src="https://github.com/user-attachments/assets/3581a8ad-c957-4745-92a6-bd1459d872ae" />
+
+
+ - Inside the sky130_fd_pr directory, you will find cells, models, and tech files. The cells foldercontains device structures like nfet and pfet, which will be used for simulations.
+
+ - Within the nfet folder, multiple SPICE libraries are available for different process corners. From these, select a suitable typical (TT) corner library for simulation
+
+    
+ <img width="700" height="600" alt="image" src="https://github.com/user-attachments/assets/2ad8c948-01cd-4a23-8fb8-9a46b0736a82" />
+
+ - We can observe all the model parameters that are required for the fabrication process.
+
+ <img width="700" height="600" alt="image" src="https://github.com/user-attachments/assets/a8245523-1a47-4d47-b878-07038aec4fa7" />
+
+
+ 
+
+ 
+
+ 
+
+
+
+  
+
+
+
+ 
+
+
 
 
 
