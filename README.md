@@ -601,14 +601,15 @@ after -
 
 
  ## 16. Lecture-2   Drain current vs gate voltage for long and short channel device
+ 
 
  ##### Observation 1 :
 
- 1. The graph shows that in saturation, the drain current ( I_D ) increases more rapidly as ( V_{GS} ) increases.
+ 1. The graph shows that in saturation, the drain current ( I_D ) increases more rapidly as ( Vgs ) increases.
 
-2. The spacing between successive ( I_D ) curves becomes larger at higher ( V_{GS} ), indicating a nonlinear rise in current.
+2. The spacing between successive ( I_D ) curves becomes larger at higher ( Vgs), indicating a nonlinear rise in current.
 
-3. This behavior reflects the quadratic dependence of ( I_D ) on ( V_{GS} ) (i.e., ( I_D \propto (V_{GS} - V_T)^2 )) for a long channel device.
+3. This behavior reflects the quadratic dependence of ( I_D ) on ( Vgs) for a long channel device.
 
 
 
@@ -616,16 +617,42 @@ after -
 
  Small Node Device (W = 0.375µ, L = 0.25µ)
 
-1. At ( V_{DS} \approx 2.5,V ), ( I_D ) increases nonlinearly with ( V_{GS} ).
+1. At ( Vds \approx 2.5,V ), ( I_D ) increases nonlinearly with ( Vgs ).
 2. The curve spacing is uneven, indicating quadratic dependence.
 
  <img width="891" height="501" alt="image" src="https://github.com/user-attachments/assets/fcc5ee5f-e58c-4732-baa2-0f05c8948621" />
 
-1. At ( V_{DS} \approx 2.5,V ), ( I_D ) increases almost uniformly with ( V_{GS} ).
+1. At ( Vds \approx 2.5,V ), ( I_D ) increases almost uniformly with ( Vgs ).
 2. The equal spacing between curves indicates linear dependence due to velocity saturation.
 
 
 <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/9c41fc47-a9f8-4177-bbe9-91575fc9e398" />
+
+
+1. We plot the graph of ( I_D ) vs ( Vgs ) by sweeping ( Vgs ) while keeping ( Vds = 2.5,V ) constant (or by sweeping ( Vds) if required).
+
+2. In the sweep syntax, the parameter written on the left-hand side is varied for every value of the parameter on the right-hand side.
+
+3. For example, for each value of ( Vdd), ( Vin ) is swept.
+
+
+
+
+<img width="303" height="174" alt="image" src="https://github.com/user-attachments/assets/ca847503-4a49-49ca-8c72-2a8e8f3d96ca" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  
 
