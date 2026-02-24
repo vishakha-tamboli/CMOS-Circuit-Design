@@ -989,6 +989,13 @@ When Vin is high and equal to Vdd
 
 
 
+ ## 23. Lecture-3  PMOS/NMOS drain current v/s drain voltage
+
+ 
+
+
+
+
 
 
  
