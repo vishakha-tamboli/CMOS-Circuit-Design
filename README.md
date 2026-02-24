@@ -719,6 +719,114 @@ there is only velocity saturation operation region get , changes whereas all ope
 
 
 
+
+
+
+
+ ## 18. Lecture-4  Velocity saturation drain current model
+
+
+
+
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/cf8bd285-5b6d-4784-aeea-92317abb9083" />
+
+- The yellow-marked term ( V_dsat ) represents the velocity saturation voltage, a technology-dependent parameter.
+
+- It defines the drain voltage at which carrier velocity saturates and current no longer increases linearly with ( Vds ).
+
+- In short-channel devices, ( V_dsat) limits the current before the classical pinch-off condition occurs.
+
+For example
+
+if Vgt = minimum value 
+
+
+- When ( V_{gt} ) is the minimum value, it means it is the limiting term in the expression.
+
+- This implies that ( Vds ) has increased sufficiently and is no longer the limiting factor.
+
+- Hence, the device operates in saturation where current is mainly controlled by ( Vgt ), not     by further increase in ( Vds ), and true for both the channel (long and short )
+
+
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/58cacdef-0c07-4bcd-bf70-01df00303723" />
+
+
+
+
+if Vds = minimum value 
+
+
+- Here, ( Vds )  is the minimum value among the terms.
+
+- This means the drain voltage is the limiting factor in determining the drain current.
+
+- The device operates in the linear (resistive) region, where current is mainly controlled by (   Vds ).
+
+
+
+
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/bc239ef9-e9fa-411d-994b-6e697b32d9fd" />
+
+if  V_dsat = minimum value 
+
+
+- This expression represents the drain current model for a short channel node.
+
+- Here, ( V_{min} = \min (Vgt, Vds, V_dsat) ), meaning the smallest of these voltages limits     the current.
+
+- The term ( V_dsat ) accounts for short-channel effects, modifying the current behavior compared to long-channel devices.
+
+- The factor ( (1 + \lambda Vds) ) includes channel length modulation effect.
+
+
+
+
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/18cd44f8-d67b-49e0-b5c5-9235b9162590" />
+
+Now will expand the eqation 
+
+
+- Ideally, if W is kept constant and L is reduced, the drain current  Id should increase because <img width="50" height="30" alt="image" src="https://github.com/user-attachments/assets/f6f14445-1133-4c93-8747-b1d523284dc0" />
+
+
+- However, in short channel devices, this increase is not proportional due to velocity saturation and other short-channel effects.
+
+- As a result, the drain current does not increase as much as expected from the simple long-channel equation.
+
+
+
+<img width="600" height="300" alt="image" src="https://github.com/user-attachments/assets/7a393410-43ab-4ec6-ba5d-2ad40a241018" /> 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
   
 
 
