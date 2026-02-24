@@ -795,7 +795,63 @@ Now will expand the eqation
 
 
 
-<img width="600" height="300" alt="image" src="https://github.com/user-attachments/assets/7a393410-43ab-4ec6-ba5d-2ad40a241018" /> 
+<img width="600" height="300" alt="image" src="https://github.com/user-attachments/assets/7a393410-43ab-4ec6-ba5d-2ad40a241018" />
+
+
+
+
+ ##### Observation 1 :
+
+
+ - In long channel devices, saturation occurs at higher ( Vds} ), so the saturation region comes later.
+
+- In short channel devices, saturation occurs at lower ( Vds ), so the device enters saturation earlier.
+
+- As channel length decreases, the transition from linear to saturation region shifts toward smaller drain voltages.
+
+- This early saturation in short channel devices is due to strong electric field effects.
+
+
+
+<img width="700" height="600" alt="image" src="https://github.com/user-attachments/assets/979ebd16-38b7-4123-983c-8098e4d8d326" />
+
+
+
+ ## 19. Lecture-5 Labs Sky130 Id-Vgs 
+
+Now we will perform the simulation for lower technology nodes using the Day 2 design file. 
+ Id vs Vds
+
+Open the file day2_nfet_idvds_L015_W039.spice.
+
+
+<img width="700" height="400" alt="image" src="https://github.com/user-attachments/assets/a52cbe9b-f1c7-4045-9e26-99447294b95d" />
+
+ simulation is being done 
+ for  w=0.39u and L=0.15u
+
+
+ <img width="700" height="600" alt="image" src="https://github.com/user-attachments/assets/2792e0c2-a0a4-40b2-8804-c01f9a15b3b5" />
+
+ <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/165f5339-20f5-469d-8d14-098b4d4d2226" />
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
