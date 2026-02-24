@@ -866,11 +866,26 @@ From the graph, ( Vt ) is identified as the point where the drain current starts
 
 To find it accurately, we draw a tangent to the curve in the steep region and note the intercept point.
 
-<img width="700" height="600" alt="image" src="https://github.com/user-attachments/assets/1531616a-5110-4127-abc0-0b886b1e85a4" /> <br/> 
+<img width="700" height="600" alt="image" src="https://github.com/user-attachments/assets/1531616a-5110-4127-abc0-0b886b1e85a4" /> <br/>
+
+The threshold voltage( Vt  is approximately 0.76 V, as obtained from the tangent drawn to the  Id  vs  Vgs  curve.
 
 
 
-  <img width="200" height="50" alt="image" src="https://github.com/user-attachments/assets/8c47e884-673d-46cb-a196-58d138540e4a" />  <br/> 
+
+  <img width="300" height="100" alt="image" src="https://github.com/user-attachments/assets/8c47e884-673d-46cb-a196-58d138540e4a" />  <br/> 
+
+
+
+ ## CMOS voltage transfer characteristics (VTC)
+
+ ## 21. Lecture-1   MOSFET as a switch
+
+ 
+
+
+
+  
 
 
 
