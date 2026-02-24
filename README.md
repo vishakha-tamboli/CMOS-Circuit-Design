@@ -640,6 +640,150 @@ after -
 
 <img width="303" height="174" alt="image" src="https://github.com/user-attachments/assets/ca847503-4a49-49ca-8c72-2a8e8f3d96ca" />
 
+for long channel   w=1.8u and L=1.2u
+
+
+<img width="700" height="500" alt="Screenshot 2026-02-24 113904" src="https://github.com/user-attachments/assets/06ba7166-e16a-4455-aabe-93872eb9b380" />  <br/>
+
+
+<img width="700" height="500" alt="Screenshot 2026-02-24 113946" src="https://github.com/user-attachments/assets/616a5746-1c73-4a77-aee3-ac4e4f3aa858" />  <br/>
+
+
+<img width="700" height="500" alt="Screenshot 2026-02-24 113959" src="https://github.com/user-attachments/assets/3b1ba7bb-78a9-429e-82b2-29bb1604fd8f" />  <br/>
+
+
+
+for short channel  w= 0.375u and L=0.25u 
+
+
+<img width="700" height="500" alt="Screenshot 2026-02-24 114202" src="https://github.com/user-attachments/assets/1755304b-dcc6-46ff-9597-b7465bcdadb0" />  <br/>
+
+<img width="700" height="500" alt="Screenshot 2026-02-24 114219" src="https://github.com/user-attachments/assets/f6b25ac4-b006-4729-992d-240f986f7ff1" />  <br/>
+
+<img width="700" height="500" alt="Screenshot 2026-02-24 114232" src="https://github.com/user-attachments/assets/59faf0af-9be4-476e-b00c-b0de725ce435" /> <br/>
+
+<img width="500" height="500" alt="Screenshot 2026-02-24 114247" src="https://github.com/user-attachments/assets/eb1a5328-6739-4200-8477-cea94dc491ab" />  <br/>
+
+
+
+
+ ## 17. Lecture-3   Velocity saturation at lower and higher electric fields
+
+
+ 1. As we have seen previously, the long channel device (W = 1.8µ, L = 1.2µ) shows a quadratic relationship between ( Id ) and ( Vgs ) in saturation.
+
+2. The short channel device (W = 0.375µ, L = 0.25µ) shows an almost linear increase of ( Id) with ( Vgs ).
+
+3. This linear behavior occurs due to the velocity saturation effect in short channel devices.
+
+ 
+<img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/a63a9387-0e2d-4e6b-86ad-39ccc633016f" />
+
+The graph shows that carrier velocity increases linearly with electric field at low fields (( v = \mu E )), but at high electric fields it reaches a saturation velocity (( v_{sat} )) due to velocity saturation effect.
+
+
+
+
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/b9deee7f-97c2-4bb7-aa54-a82e707ba0f1" />  <br/>
+
+
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/376d86b3-65ab-41d4-a1be-153a121fa2ad" />
+
+To get the continuty point will eqate (E=Ec)
+
+
+<img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/178a647e-15d2-474f-8df8-e9ad69281669" />
+
+
+We have rederived the drain current eqation using the boundary condition for electric field
+
+
+<img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/5d00d688-cabb-4065-9fb7-b41c443c8124" />  <br/>
+
+the drain current eqation becomes complex
+
+
+<img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/dbcc2370-4c54-48ae-a83f-a73e6dac719a" />
+
+To simlify this , lets come up with one model
+
+operations regions for short and long channels 
+
+there is only velocity saturation operation region get , changes whereas all operation remains same 
+
+
+<img width="300" height="200 " alt="image" src="https://github.com/user-attachments/assets/7f43d634-ded4-46f7-b5ba-d22141025217" /> <br/>
+
+
+<img width="655" height="324" alt="image" src="https://github.com/user-attachments/assets/d21d3a1c-115e-4ce0-949e-bba7286993bd" /> <br/>
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+   
+
+
+
+
 
 
 
