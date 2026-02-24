@@ -878,8 +878,149 @@ The threshold voltage( Vt  is approximately 0.76 V, as obtained from the tangent
 
 
  ## CMOS voltage transfer characteristics (VTC)
+ 
 
  ## 21. Lecture-1   MOSFET as a switch
+
+
+ - A transistor operates only when the magnitude of gate-to-source voltage exceeds the threshold voltage, i.e., ( |Vgs| > Vt ).
+
+- The modulus sign is used because ( Vgs ) is positive for NMOS and negative for PMOS devices.
+
+- When ( |Vgs| ) is less than ( Vt ), the device remains in the OFF (cutoff) region.
+
+- The device turns ON and allows current to flow only when ( |Vgs}| ) becomes greater than the threshold voltage.
+
+
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/ad8e7c2f-f959-4009-881a-9b8d72fbdb6b" />
+
+
+Now will see CMOS( Complementary MOSFET)
+
+When Vin is high and equal to Vdd
+
+
+- For the PMOS (upper transistor), the gate-to-source voltage is determined by ( Vin ) and ( Vdd ), since the source of PMOS is connected to ( Vdd ).
+
+- For the NMOS (lower transistor), the gate-to-source voltage is determined by ( V_{in} ) and ( Vss ) (ground), as its source is connected to ( Vss ).
+
+- Thus, in a CMOS inverter, ( Vin ) controls both transistors by forming ( Vgs ) with ( Vdd ) for PMOS and with ( Vss ) for NMOS.
+
+
+
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/a2ecbe0c-9cf0-4646-a443-e10ca3002793" />
+
+
+ ## 22. Lecture-2  Introduction to standard MOS voltage current parameters
+
+ When Vin is low and equal to ov 
+
+ - When a high voltage is applied at ( Vdd ) and ( V_in ) is kept low, the PMOS source is at ( Vdd ) and the gate is at a lower potential.
+
+- This makes ( Vgs ) negative, and for the PMOS to turn ON, ( Vgs ) must be more negative than its threshold voltage (i.e., ( Vgs < V_t ), where ( Vt ) is negative).
+
+- Under this condition, the PMOS transistor turns ON and allows current to flow from source to drain.
+
+
+
+
+
+ <img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/2897ce77-b051-4491-935e-4e9801984de0" />  <br/> 
+
+ When ( Vin = Vdd ), a conduction path exists between ( Vout ) and ( Vss ), causing the load capacitor ( C(load) ) to discharge.
+
+
+
+ <img width="600" height="200" alt="image" src="https://github.com/user-attachments/assets/5a27dfb2-86da-49a2-aa12-e9ec70b10f7d" />  <br/> 
+
+
+ <img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/82cd9a2d-e3f9-40b5-9cff-479e5ef693e3" />  <br/> 
+ 
+
+ When ( Vin = 0 ), a conduction path forms between ( Vdd ) and ( Vout ), causing the load capacitor ( C(load) ) to charge, and ( Vout ) rises to ( Vdd ).
+
+
+
+ <img width="600" height="200" alt="image" src="https://github.com/user-attachments/assets/51136925-941e-471c-9532-85a0e6e7cd9b" />   <br/> 
+
+
+ <img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/e4f22e63-c15e-413b-ab4a-f2dab2a2aa52" />   <br/> 
+
+ Let us give the naming convention of the CMOS
+
+ - G = Gate
+
+- S = Source
+
+- D = Drain
+
+- ( Vgs ) = Gate-to-Source voltage
+
+- ( Vds ) = Drain-to-Source voltage
+
+- ( Vgsn ) = Gate-to-Source voltage of NMOS
+
+- ( Vgsp ) = Gate-to-Source voltage of PMOS
+
+- ( Vdsn ) = Drain-to-Source voltage of NMOS
+
+- ( Vdsp ) = Drain-to-Source voltage of PMOS
+
+- ( Idsn ) = Drain-to-Source current through NMOS
+
+- ( Idsp ) = Drain-to-Source current through PMOS
+
+- ( Rn ) = Equivalent resistance of NMOS
+
+- ( Rp ) = Equivalent resistance of PMOS
+
+- ( C_L ) = Load capacitance
+
+- ( Vdd ) = Supply voltage
+
+- ( Vss ) = Ground (reference) voltage
+
+- ( Vin ) = Input voltage
+
+- ( Vout ) = Output voltage
+
+
+<img width="700" height="600" alt="Screenshot 2026-02-25 010212" src="https://github.com/user-attachments/assets/e711eaf9-927b-4787-9840-763663aa7b2a" />
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+ 
+
+
+  
+
+
+ 
+
+
+
+
+ 
+
+
+
+ 
+
+
+  
+
+
+ 
 
  
 
