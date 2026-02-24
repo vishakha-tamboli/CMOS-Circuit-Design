@@ -328,7 +328,8 @@ after -
    
    This condition is called the saturation region, where the device becomes saturated and no further increase in drain current occurs despite increasing the drain–source voltage. <br/>
    
-  <img width="300" height="200" alt="Screenshot 2026-02-20 000206" src="https://github.com/user-attachments/assets/bba6c59e-03fa-4cda-8a63-627e0fc5c824"/> 
+  <img width="300" height="200" alt="Screenshot 2026-02-20 000206" src="https://github.com/user-attachments/assets/bba6c59e-03fa-4cda-8a63-627e0fc5c824"/> <br/>
+  
     In the saturation region, the channel voltage remains fixed at (Vgs − Vt), and the drain current becomes independent of Vds. To obtain the drain current  equation in this region, Vds is replaced by (Vgs − Vt).
 	
   <img width="700" height="500" alt="Screenshot 2026-02-19 235606" src="https://github.com/user-attachments/assets/57d42bb2-31cf-4963-898a-5ad0fe54cbc8" />
@@ -831,9 +832,71 @@ Open the file day2_nfet_idvds_L015_W039.spice.
  for  w=0.39u and L=0.15u
 
 
- <img width="700" height="600" alt="image" src="https://github.com/user-attachments/assets/2792e0c2-a0a4-40b2-8804-c01f9a15b3b5" />
+ <img width="700" height="600" alt="image" src="https://github.com/user-attachments/assets/2792e0c2-a0a4-40b2-8804-c01f9a15b3b5" />  <br/>
 
- <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/165f5339-20f5-469d-8d14-098b4d4d2226" />
+ <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/165f5339-20f5-469d-8d14-098b4d4d2226" />  <br/>
+
+
+
+- The plot shows  Id vs Vds for different values of  Vgs .
+
+- For lower values of  Vgs , the drain current follows a quadratic dependence on  ( Vgs - Vt ).
+
+- For higher values of ( Vgs ), the behavior becomes more linear due to velocity saturation in    short-channel devices.
+
+- The peak current is approximately 197 µA. To observe the peak current at ( Vgs = 1.8 , V ),     simply left-click on the curve corresponding to ( Vgs = 1.8 , V ).
+
+
+Open the file day2_nfet_idvgs_L015_W039.spice and perform DC simulation using ngspice.
+
+Keep ( Vds = 1.8 , V ) and sweep  Vgs  from 0 V to 1.8 V with a step size of 0.1 V.
+
+
+<img width="700" height="600" alt="image" src="https://github.com/user-attachments/assets/9fa61539-d61e-47ec-a6c7-8bf140780b13" />  <br/>
+
+<img width="700" height="600" alt="image" src="https://github.com/user-attachments/assets/7e22cbff-7e02-4f5b-8dde-d1a0dc14039f" />
+
+
+
+ ## 20. Lecture-6  Labs Sky130 Vt
+
+ Now we will determine the threshold voltage ( Vt ) from the ( Id ) vs ( Vgs ) curve.
+
+From the graph, ( Vt ) is identified as the point where the drain current starts increasing sharply for a small change in ( Vgs ).
+
+To find it accurately, we draw a tangent to the curve in the steep region and note the intercept point.
+
+<img width="700" height="600" alt="image" src="https://github.com/user-attachments/assets/1531616a-5110-4127-abc0-0b886b1e85a4" /> <br/> 
+
+
+
+  <img width="200" height="50" alt="image" src="https://github.com/user-attachments/assets/8c47e884-673d-46cb-a196-58d138540e4a" />  <br/> 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
  
 
