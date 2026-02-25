@@ -1249,7 +1249,8 @@ The DC sweep of the CMOS inverter is performed using the included model file (su
 - After running ngspice, the VTC is plotted using the command: `plot out vs in`.
 
 
-<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/e93e3b93-83f7-4de8-8439-7858e264182d" />
+<img width="500" height="500 " alt="image" src="https://github.com/user-attachments/assets/e1e9ff53-9398-4705-b427-f25e49c34347" />
+
 
 
 - The switching threshold (Vm) is the point on the VTC where Vin = Vout. Zoom into the region where the curves appear equal by right-clicking and selecting the area.
@@ -1257,6 +1258,13 @@ The DC sweep of the CMOS inverter is performed using the included model file (su
 - Click near the intersection point; the terminal shows (x0, y0). Since Vin = Vout at Vm, x0 ≈ y0 = Vm.
 
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/68ddd0a7-9855-410b-a355-a5a3fe19a5f6" />
+
+For a W/L ratio of 2.3, the switching threshold (Vm) is approximately 0.876 V, observed at the point where Vin = Vout on the VTC curve.
+
+
+<img width="645" height="393" alt="image" src="https://github.com/user-attachments/assets/4001f862-bb22-464b-888a-a24b0bc5f7a4" />
+
+
 
 
 
