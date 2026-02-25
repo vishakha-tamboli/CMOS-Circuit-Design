@@ -1165,6 +1165,58 @@ When Vin is high and equal to Vdd
 
 <img width="700" height="600" alt="image" src="https://github.com/user-attachments/assets/9490a893-6c0d-4c9a-ae44-11f978db7166" />
 
+## Day 3 - CMOS Switching threshold and dynamic simulations
+
+
+## Voltage transfer characteristics – SPICE simulations
+
+
+## 27. Lecture-1   SPICE deck creation for CMOS inverter
+
+- To simulate the VTC, we first create a SPICE deck, which contains the circuit connectivity information (netlist).
+
+- The netlist defines the device connections (including substrate terminals), where M1 is the PMOS and M2 is the NMOS.
+
+- It also specifies the input stimulus, technology/model parameters, and the output nodes to be probed for measurement.
+
+- <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/194a79a2-d19d-422d-9d22-cdc1bda20e3b" />  <br/> 
+
+<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/5273f57b-2ae5-48ca-a358-4079b43bedfa" />
+
+
+
+- The SPICE deck defines the circuit connectivity (netlist) of the CMOS inverter.
+
+- M1 (PMOS) is connected as: `M1 out in vdd vdd pmos W=0.375u L=0.25u`.
+
+- M2 (NMOS) is connected as: `M2 out in 0 0 nmos W=0.375u L=0.25u`.
+
+- It specifies device dimensions, terminal connections (drain, gate, source, body), and supply nodes required for VTC simulation.
+
+
+
+
+
+
+<img width="700" height="600" alt="image" src="https://github.com/user-attachments/assets/a42151f2-7c68-40d8-b54d-f4490c1156d0" />
+
+
+## 28. Lecture-2  SPICE simulation for CMOS inverter
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
 
 
 
