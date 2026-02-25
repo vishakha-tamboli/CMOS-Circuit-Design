@@ -1203,6 +1203,114 @@ When Vin is high and equal to Vdd
 
 ## 28. Lecture-2  SPICE simulation for CMOS inverter
 
+ The SPICE deck defines the connectivity (netlist) of the CMOS inverter along with supply and device parameters for simulation.
+
+- M2 (NMOS) is defined as: `M2 out in 0 0 nmos W=0.375u L=0.25u`, where drain is connected to output, gate to input, and both source and body to ground.
+
+- It clearly specifies device dimensions (W/L), terminal order (D, G, S, B), and required nodes for VTC analysis.
+
+
+
+<img width="700" height="600" alt="image" src="https://github.com/user-attachments/assets/8e60501c-414f-46ed-8843-71a5f95ff526" />
+
+
+
+The DC sweep of the CMOS inverter is performed using the included model file (such as the `.include 250nm_cmos_models.mod`), which provides the NMOS and PMOS technology parameters. Based on this model file, the VTC curve is obtained, showing a sharp transition from high to low output, confirming correct device modeling and inverter operation.
+
+
+
+<img width="700" height="600" alt="image" src="https://github.com/user-attachments/assets/09425543-be68-4877-abb1-c9eeb6475abf" />
+
+
+ A DC sweep command is used to vary the input voltage from 0 V to 2.5 V with a step size of 0.05 V to obtain the VTC.
+
+ Only the input voltage is swept, and the corresponding output voltage is measured to analyze inverter behavior.
+
+ The simulation is performed with Wn = Wp = 0.375 µm and Ln = Lp = 0.25 µm, giving an aspect ratio (W/L) of 1.5 for both NMOS and PMOS devices.
+
+
+ <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/54513972-e7d7-4c7a-8049-cd821dbf3b37" />
+
+
+
+ The following graph shows the VTC obtained with Wn = 0.375 µm, Wp = 0.9375 µm, and Ln = Lp = 0.25 µm (Wn/Ln = 1.5, Wp/Lp = 2.5). Since the PMOS is 2.5× wider than the NMOS, the switching point shifts due to the stronger pull-up network, affecting the inverter’s transition behavior.
+
+
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/604e8242-d59b-4dac-8160-d036cf0a3725" />
+
+
+## 29. Lecture-3  Labs Sky130 SPICE simulation for CMOS
+
+
+- A CMOS inverter is designed using PFET and NFET, with the PMOS having a W/L ratio about 2.33× higher than the NMOS to balance strengths.
+
+- Vin is swept from 0 V to 1.8 V in steps of 0.01 V, and the corresponding Vout is recorded to obtain the VTC.
+
+- After running ngspice, the VTC is plotted using the command: `plot out vs in`.
+
+
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/e93e3b93-83f7-4de8-8439-7858e264182d" />
+
+
+- The switching threshold (Vm) is the point on the VTC where Vin = Vout. Zoom into the region where the curves appear equal by right-clicking and selecting the area.
+
+- Click near the intersection point; the terminal shows (x0, y0). Since Vin = Vout at Vm, x0 ≈ y0 = Vm.
+
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/68ddd0a7-9855-410b-a355-a5a3fe19a5f6" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
