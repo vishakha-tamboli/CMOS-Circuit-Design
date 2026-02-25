@@ -998,7 +998,7 @@ When Vin is high and equal to Vdd
 - ( Vgsp = Vin - Vdd )
 - ( Vdsp = Vout - Vdd )
 
- <img width="400" height="600" alt="image" src="https://github.com/user-attachments/assets/3f9671b3-3a13-4ee9-82d6-12fbccfcba26" />
+ <img width="400" height="600" alt="image" src="https://github.com/user-attachments/assets/3f9671b3-3a13-4ee9-82d6-12fbccfcba26" />  <br/> 
 
 
  <img width="100" height="60" alt="image" src="https://github.com/user-attachments/assets/574ffeb8-729c-4f0b-bb31-d448a8b573e6" />
@@ -1131,6 +1131,46 @@ When Vin is high and equal to Vdd
 * Hence, the NMOS load curve can be plotted directly without any voltage transformation.
 
 <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/fb9f5d3c-cbea-48bc-affe-2e81511c8e8b" />
+
+
+  ## 26. Lecture-6  L5  Step4 – Merge PMOS – NMOS load curves and plot VTC
+
+
+
+  <img width="700" height="200" alt="image" src="https://github.com/user-attachments/assets/17faa5ca-21a2-46d9-8b06-3751ef0cc8bf" />  <br/>
+  
+	- To obtain the CMOS Voltage Transfer Characteristics (VTC), the NMOS and PMOS load curves are superimposed.
+
+- For each value of ( Vin ), the operating point is found where the drain currents of NMOS and PMOS are equal in magnitude and opposite in direction.
+
+- The common intersection points of these curves give the relationship between ( Vin ) and ( Vout ), forming the VTC.
+
+
+
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/fa2c6ace-cdaf-4f20-8450-91de6734f761" />  <br/> 
+
+- Since ( Vdd = 2V ), both ( Vin ) and ( Vout ) vary within the range 0V to 2V.
+
+- ( Vin = 0V ) → ( Vout = 2V ); NMOS is in cutoff and PMOS is in linear region.
+
+- ( Vin = 0.5V ) → ( 1.5V < Vout < 2V ); NMOS is in saturation and PMOS is in linear region.
+
+- ( Vin = 1V ) → ( 0.5V < Vout < 1.5V ); both NMOS and PMOS operate in saturation.
+
+- ( Vin = 1.5V ) → ( 0V < Vout < 0.5V ); NMOS is in linear region and PMOS is in saturation.
+
+- ( Vin = 2V ) → ( Vout = 0V ); NMOS is in linear region and PMOS is in cutoff.
+
+
+
+<img width="700" height="600" alt="image" src="https://github.com/user-attachments/assets/9490a893-6c0d-4c9a-ae44-11f978db7166" />
+
+
+
+
+  
+
+
 
 
 
