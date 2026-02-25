@@ -991,6 +991,173 @@ When Vin is high and equal to Vdd
 
  ## 23. Lecture-3  PMOS/NMOS drain current v/s drain voltage
 
+
+
+- ( Vgsn = Vin - Vss = Vin )
+- ( Vdsn = Vout )
+- ( Vgsp = Vin - Vdd )
+- ( Vdsp = Vout - Vdd )
+
+ <img width="400" height="600" alt="image" src="https://github.com/user-attachments/assets/3f9671b3-3a13-4ee9-82d6-12fbccfcba26" />
+
+
+ <img width="100" height="60" alt="image" src="https://github.com/user-attachments/assets/574ffeb8-729c-4f0b-bb31-d448a8b573e6" />
+
+ - As ( Vgsn ) increases (for NMOS) and as the magnitude of ( Vgsp ) increases, i.e., becomes more negative (for PMOS), the corresponding drain current increases in magnitude.
+
+- For small ( Vdsn ) (NMOS) and small ( |Vdsp}| ) (PMOS), the devices operate in the linear (ohmic) region.
+
+- For larger ( Vdsn ) (NMOS) and larger ( |Vddsp| ) (PMOS), both devices enter the saturation region where the drain current becomes nearly constant.
+
+
+ <img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/2ae5b85f-0fc4-40bc-bf0d-90e8d906452e" />
+
+
+
+  ## 24. Lecture-4  Step1 – Convert PMOS gate-source-voltage to Vin
+
+
+
+
+  - In a CMOS inverter, only Vin and Vout are externally measurable. Internal node voltages of NMOS and PMOS cannot be directly observed, so the Voltage Transfer Characteristics (VTC) and delay analysis must be expressed only in terms of ( Vin ) and ( Vout ).
+
+- To derive the VTC of a static CMOS inverter, assume:
+
+  - Long channel devices
+  - ( Vdd = 2V )
+
+ For the PMOS transistor:
+
+  - ( Vgsp = Vin - Vdd )
+  - Since ( Vdd = 2V ),
+    [
+    Vgsp = Vin - 2
+    ]
+  - Rearranging,
+    [
+    Vin = Vgsp + Vdd
+    ]
+
+- Fixing ( Vgsp ) values and converting them into corresponding ( Vin ):
+
+  | ( Vgsp ) (V) | ( Vin = Vgsp + 2 ) (V) |
+  | --------------- | ---------------------------- |
+  | 0               | 2                            |
+  | -0.5            | 1.5                          |
+  | -1              | 1                            |
+  | -1.5            | 0.5                          |
+  | -2              | 0                            |
+
+- To express PMOS characteristics in the same reference as NMOS:
+
+  - Use ( Vgsp = Vin - Vdd )
+  - Use ( Idsp} = - Idsn )
+
+- This transformation allows:
+
+  - PMOS and NMOS characteristics to be plotted using the same variables.
+  - Direct comparison and superposition of currents.
+  - Determination of the operating point where ( Idn = Idp ).
+
+- By sweeping ( Vin) from 0 to ( Vdd), and equating NMOS and PMOS drain currents, we obtain:
+
+  - The Voltage Transfer Characteristic (VTC)
+  - From the VTC, switching threshold and delay behavior can be analyzed.
+
+- Thus, although internal voltages exist inside the inverter, from a user’s perspective only ( Vin ) and ( Vout ) define the inverter behavior and its delay characteristics.
+
+- <img width="700" height="600" alt="image" src="https://github.com/user-attachments/assets/b524f829-bd5b-4f62-bfff-19f8ac0f87e3" />
+
+
+
+
+
+
+- Rewrite ( Vgsp ) in terms of input voltage:
+  [
+  V_gsp = Vin - Vdd
+  ]
+  so PMOS characteristics are expressed using ( Vin ).
+
+- Use current relation:
+  [
+  Idsp} = - Idsn
+  ]
+  ensuring equal magnitude and opposite direction for current continuity.
+
+- This converts the PMOS transfer curve into the same variables as NMOS, enabling direct comparison.
+
+- While plotting, corresponding ( Vin ) values (from ( Vin = Vgsp + Vdd )) are used, and PMOS current is represented in terms of ( Idsn ).
+
+
+  ## 25. Lecture-5  L5 Step2 & Step3 – Convert PMOS and NMOS drain-source-voltage to vout
+
+- The transfer characteristics are initially expressed in terms of ( Vdsp ), which is an internal PMOS voltage and cannot be directly observed.
+
+- To convert it into measurable external variables, we use the circuit relation:
+  [
+  Vout = Vdd + Vdsp
+  ]
+  Therefore,
+  [
+  Vdsp = Vout - Vdd
+  ]
+
+- For ( Vdd = 2V ), as ( Vdsp ) varies from −2V to 0V, the corresponding ( Vout ) varies from 0V to 2V.
+
+
+ <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/4cb69904-86ff-4bce-96f9-2517abbc7b7a" />
+
+- Thus, substituting ( Vdsp ) in terms of ( Vout ) allows the PMOS characteristics to be completely expressed using the external node voltages ( Vin ) and ( Vout ).
+
+<img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/9ef9472e-99c5-4004-970a-e15e9e5cca37" />
+
+
+- When ( Vout = 2V ) (with ( Vdd = 2V )), ( Vdsp = 0V ). There is no voltage drop across the PMOS, so the current becomes zero. The load capacitor ( C_L ) is fully charged, representing the steady-state HIGH output condition of the CMOS inverter.
+
+- When ( Vout = 0V ), the magnitude of ( Vdsp ) becomes 2V. The output capacitor ( C_L ) is fully discharged, and depending on ( Vin ), current can flow to charge the node back to HIGH through the PMOS.
+
+- These conditions are valid when PMOS and NMOS operate together as a CMOS inverter, ensuring proper charging and discharging of the output node.
+
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/6d97d0de-a465-44f3-bc67-fa36d618e1d4" />
+
+
+
+
+* For NMOS, ( V_{GSn} = V_{in} ) and ( V_{DSn} = V_{out} ).
+
+* Since both are external node voltages, the NMOS current equations are directly written in terms of ( V_{in} ) and ( V_{out} ).
+
+* Hence, the NMOS load curve can be plotted directly without any voltage transformation.
+
+<img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/fb9f5d3c-cbea-48bc-affe-2e81511c8e8b" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+    
+
  
 
 
