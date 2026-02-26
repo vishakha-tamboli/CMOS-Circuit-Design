@@ -1322,12 +1322,12 @@ From the VTC plot at the switching point (Vm), a few key observations can be not
 
 We know the equations for IdsN and IdsP 
 
-<img width="377" height="114" alt="image" src="https://github.com/user-attachments/assets/3c392cfb-739f-49fd-bba4-6bf69369d602" />
+<img width="400" height="150" alt="image" src="https://github.com/user-attachments/assets/3c392cfb-739f-49fd-bba4-6bf69369d602" />
 
 Solving the above equation for Vm
 
 
-<img width="616" height="227" alt="image" src="https://github.com/user-attachments/assets/ef42feb1-267b-4439-8bd0-c64a77e96c3c" />
+<img width="700" height="300" alt="image" src="https://github.com/user-attachments/assets/ef42feb1-267b-4439-8bd0-c64a77e96c3c" />
 
 
 
@@ -1337,7 +1337,178 @@ Solving the above equation for Vm
 
 Alternatively, the PMOS-to-NMOS sizing ratio can be determined analytically to achieve a desired switching threshold voltage (Vm).
 
- <img width="700" height="400" alt="image" src="https://github.com/user-attachments/assets/9bae4736-2f78-488d-a43d-42a896e659e2" />
+ <img width="700" height="400" alt="image" src="https://github.com/user-attachments/assets/9bae4736-2f78-488d-a43d-42a896e659e2" /> <br/> 
+
+ <img width="600" height="100" alt="image" src="https://github.com/user-attachments/assets/7b174023-2dd3-421c-8d1d-46e6e4c9e66a" /> <br/> 
+
+ <img width="600" height="100" alt="image" src="https://github.com/user-attachments/assets/7cf0336c-e570-4dfa-aa67-21bf4e4e9330" /> <br/> 
+
+ <img width="300" height="100" alt="image" src="https://github.com/user-attachments/assets/4a7d06cd-9592-4441-8fb3-be7a0d801c2d" /> <br/>  
+
+ Expanding Kp and Kn
+
+ <img width="300" height="100" alt="image" src="https://github.com/user-attachments/assets/33fe1bb1-b94c-4dfc-8bd3-747e38508936" /> <br/>
+
+
+ 
+ 
+ <img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/e589b824-8196-48ae-8407-83ef6d2b40ea" />
+
+ On the right-hand side, all parameters are constants obtained from the model file except Vm. Once Vm is specified, the required W/L ratios can be calculated.
+
+This helps determine how much larger the PMOS W/L must be compared to NMOS for a given Vm. Next, we analyze CMOS behavior for different PMOS and NMOS sizing ratios.
+
+
+
+ <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/63a35216-3554-46dd-aa40-7aa21ec6c366" />
+
+
+ ## 33. Lecture-4  Static and dynamic simulation of CMOS inverter
+
+ `Vin in 0 0 pulse 0 2.5 0 10p 10p 1n 2n`
+
+This pulse source is applied as the input to the CMOS inverter to perform transient analysis and observe the dynamic switching behavior.
+
+ `Vin in 0 0 pulse 0 2.5 0 10p 10p 1n 2n`
+
+
+ <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/27e0a0a1-e22f-45cb-9cda-d99601e57e84" /> <br/>
+
+
+  <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/619b7422-5115-4198-89ab-e0980ae04cec" /> <br/>
+
+ To calculate the rise delay, the measurement is taken at the 50% level of the output waveform (i.e., at half of VDD). The rise delay is the time difference between the input and output signals when both cross this 50% voltage level during the rising transition.
+  
+
+  
+
+
+  <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/6a879d94-13b6-47a4-982c-a072c8731c41" />
+
+  From the waveform markers shown, the two time points at the 50% level are approximately 1.01446 ns and 1.16477 ns.
+
+The rise delay is calculated as the difference between these values:
+
+Rise delay ≈ 1.16477 ns − 1.01446 ns ≈ 0.150 ns.
+
+
+
+  <img width="522" height="407" alt="image" src="https://github.com/user-attachments/assets/767d4d02-a588-4cfb-9944-bb60a819d519" />
+
+
+  To calculate the fall delay, observe the waveform at the 50% voltage level (half of VDD) during the falling transition. The fall delay is the time difference between when the input and output signals cross this 50% level while the output is transitioning from high to low.
+
+
+  <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/8226cebe-95bc-46cb-a1ff-e7007952afab" />
+
+
+From the waveform markers, the two time points at the 50% level are approximately 2.00486 ns and 2.07653 ns.
+
+The fall delay is calculated by taking the difference:
+
+Fall delay ≈ 2.07653 ns − 2.00486 ns ≈ 0.072 ns.
+
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/b16c75c7-a931-491c-a0cf-5564252165d5" /> <br/>
+
+
+<img width="700" height="600" alt="image" src="https://github.com/user-attachments/assets/af4a156c-a3d6-432e-bcae-cb5bbe0a10d0" /> <br/>
+
+
+
+ ## 34. Lecture-5  Static and dynamic simulation of CMOS inverter with increased PMOS width
+
+
+ SPICE simulations will be performed with a larger PMOS width, and the results will be compared with the previous configuration.
+
+
+ <img width="700" height="600" alt="image" src="https://github.com/user-attachments/assets/3fa92bda-d3ff-4138-b47f-6a3b8d397544" /> <br/>
+
+
+ <img width="700" height="600" alt="image" src="https://github.com/user-attachments/assets/861478e1-5cdd-40fd-860a-49989451ded7" /> <br/>
+
+ <img width="700" height="600 " alt="image" src="https://github.com/user-attachments/assets/b766c969-eab1-469c-bf65-40d843a04890" />  <br/>
+
+ <img width="700" height="600" alt="image" src="https://github.com/user-attachments/assets/5b8e1563-da7f-4a51-aa98-c6b333e5eeed" />  <br/>
+
+ this is observed that as , The rise delay decreases as the PMOS width (Wp/Lp) increases. This is because a wider PMOS provides stronger pull-up capability, reducing the time required to charge the output capacitor.
+
+With a larger device area, more current is available to charge the load capacitance, resulting in a significantly faster rising transition.
+
+<img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/d747d237-b39b-412b-b954-5a516a304127" />
+
+
+ ## 35. Lecture-6  Applications of CMOS inverter in clock network and STA
+
+ During fabrication, small variations in the dimensions of PMOS and NMOS devices may occur. However, the CMOS inverter is robust enough that these size variations do not cause significant changes in the switching threshold (Vm).
+
+When (W/L)p is approximately twice (W/L)n, the rise and fall delays become nearly equal. By simulation, the exact sizing ratio can be determined to balance both delays, demonstrating the symmetrical behavior of the CMOS inverter.
+
+
+
+ <img width="700" height="400" alt="image" src="https://github.com/user-attachments/assets/2e34683d-9b6c-4590-a968-b78d9fafe612" />
+
+ The H-Tree clock network distributes the clock evenly across the chip to minimize skew, using buffers to drive large loads. Since Rₒₙ(PMOS) is about 2–2.5× higher than Rₒₙ(NMOS), proper sizing is needed to balance pull-up and pull-down strengths.
+
+In clock buffers, rise and fall delays are designed to be equal to maintain symmetric transitions and avoid duty cycle distortion.
+  
+
+
+
+ <img width="700" height="500    " alt="image" src="https://github.com/user-attachments/assets/c8f52ba2-5c45-4410-a799-12172e82cda1" />
+
+ <img width="700" height="600 " alt="image" src="https://github.com/user-attachments/assets/15806bfd-97c9-41c7-bab8-4b0100962717" />
+
+ ## Day 4  CMOS Noise Margin Robustness Evaluation
+
+ ## Static behaviour evaluation-CMOS inverter robustness-Noise Margin
+
+
+ ## 36. Lecture-1   Introduction to noise margin
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+ 
+ 
+
+
+
+
+
+ 
 
 
 
