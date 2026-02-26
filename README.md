@@ -1656,9 +1656,9 @@ We will now plot the Voltage Transfer Characteristics (VTC) for the following su
 
  <img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/4166852a-797a-4491-850a-bab694d6ee09" /> <br/>
 
- <img width="600" height="200" alt="image" src="https://github.com/user-attachments/assets/0a75ab71-90de-41ce-8735-f0ced9dd1853" />
-
-  ## 43. Lecture-3  Sky130 Supply Variation Labs
+ <img width="600" height="200" alt="image" src="https://github.com/user-attachments/assets/0a75ab71-90de-41ce-8735-f0ced9dd1853" />  <br/>
+ 
+ ## 43. Lecture-3  Sky130 Supply Variation Labs
 
   now calculating the supply variation.
 
@@ -1736,9 +1736,63 @@ Calculation:
 Gain = \frac{-0.78}{0.0831} = -9.3844
 ]
 
-[
+
 |Gain| = 9.3844
-]
+
+
+
+## Static behaviour evaluation-CMOS inverter robustness-Device variation
+
+## 44. Lecture-1  Sources of variation – Etching process
+
+We will study the sources of variation in the VTC characteristics of a CMOS inverter.
+
+There are two main sources of device variation:
+
+- Etching process variation
+- Oxide thickness variation
+
+The etching process is a very important fabrication step because it defines the physical structure of the CMOS inverter. It determines the gate length and width (the common area between polysilicon and diffusion). Any variation during etching can change these dimensions, which directly affects current, delay, and the VTC characteristics.
+
+In the CMOS inverter layout:
+
+- P-diffusion region is shown in green.
+- Polysilicon (gate) is shown in red.
+- Metal layer is shown in blue.
+- N-diffusion region is shown in yellow.
+- Contacts between layers are indicated by black crosses.
+
+Variations in these regions due to fabrication processes impact the overall inverter performance.
+
+
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/a1ec5ce6-0644-4988-b40f-3cdc06c815a7" />
+
+When considering an inverter chain, the variations may differ from one inverter to another.
+
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/bd6c912c-4902-4679-86dc-f75af1e71401" />  <br/>
+
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/c1919bd5-106f-4d3a-80cf-13f3bee01e0d" />  <br/>
+
+The variation is greater at the edges or sides compared to the center.
+
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/77c31f9e-3305-48fe-a86c-b4526fdacffe" />
+
+Therefore the variation in L and W can change the drain current of CMOS inverter.
+
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/f4da52bb-b7f6-446f-b2a8-e91031e71586" />
+
+
+
+
+
+
+
+
+
+
+
+ 
+
 
 
 
