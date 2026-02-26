@@ -1542,18 +1542,18 @@ First, we identify the points where the slope equals −1 and extend the tangent
 
 
 
-  <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/4b870f60-e6b5-4aa5-a32c-3c435219f22a" />
+  <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/4b870f60-e6b5-4aa5-a32c-3c435219f22a" /> <br/>
 
 
-  <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/0d639c84-df54-4b33-bf26-b9615a7026ad" />
+  <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/0d639c84-df54-4b33-bf26-b9615a7026ad" /> <br/>
 
-  <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/1f6c2052-9d7d-4d7c-b2a7-98f17040e7cc" />
-
-
-  <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/259db2c0-cd7a-48db-a832-07fd8688a2d8" /> 
+  <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/1f6c2052-9d7d-4d7c-b2a7-98f17040e7cc" /> <br/>
 
 
-  <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/83bbd90b-e1c0-45b6-a112-5c09c264e718" />
+  <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/259db2c0-cd7a-48db-a832-07fd8688a2d8" /> <br/>
+
+
+  <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/83bbd90b-e1c0-45b6-a112-5c09c264e718" /> <br/>
 
 
 - Increasing PMOS width raises the high noise margin (NH).
@@ -1567,10 +1567,10 @@ First, we identify the points where the slope equals −1 and extend the tangent
 
 
 
-<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/af6721f8-1bf6-4d04-a9ea-2edd8737cab5" />
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/af6721f8-1bf6-4d04-a9ea-2edd8737cab5" /> <br/>
 
 
-<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/b4b56812-7bf0-42ad-aabc-93c1fd2d2179" />
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/b4b56812-7bf0-42ad-aabc-93c1fd2d2179" /> <br/>
 
 
  ## 40. Lecture-5  Noise margin variation with respect to PMOS width
@@ -1593,6 +1593,192 @@ The noise margins are calculated as:
 
 - (NH = Voh - Vih = 1.70952 - 0.98778 = 0.72) V
 - (NL = Vil - Vol = 0.7733 - 0.09523 = 0.67807) V
+
+
+ ## 41. Lecture-1  Smart SPICE simulation for power supply variations
+
+
+ Another factor in evaluating the robustness of a CMOS inverter is **power supply scaling**. Reducing the gate length lowers the operating power, but the CMOS characteristics should remain largely unchanged under power scaling.
+
+ 
+<img width="700" height="400" alt="image" src="https://github.com/user-attachments/assets/010c8cc4-1936-4b41-913e-f759cbf7d684" />
+
+ MODEL Descriptions
+
+v1 2.5 supply voltage
+M1 in in vdd vdd pmos W=0.9375u L=0.25u
+M2 out in 0 0 nmos W=0.375u L=0.25u
+
+We will now plot the Voltage Transfer Characteristics (VTC) for the following supply voltages: VDD = 2.5V, 2V, 1.5V, 1V, and 0.5V.
+
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/27e77f60-46d0-4b2e-9dfa-7b4db5cd6c8b" />
+
+ ## 42. Lecture-2  Advantages and disadvantages using low supply voltage
+ 
+- We will analyze the curves obtained from the simulation to understand the advantages and disadvantages of using a low supply voltage.
+
+- The first parameter to evaluate is the gain at each supply voltage.
+
+- The gain factor is defined as the ratio of the change in output voltage to the change in input voltage (ΔVout / ΔVin).
+
+
+ <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/0be7a850-c72a-471f-8b2d-7de59ac9f97d" /> <br/>
+
+ <img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/ebb3d2a9-312d-4eb6-99d6-bc725249ac85" /> <br/>
+
+ <img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/af162822-d145-460b-a18f-26cf8715def2" /> <br/>
+
+ gain at lower supply voltage
+
+
+ <img width="600" height="200" alt="image" src="https://github.com/user-attachments/assets/432a599f-1ca0-4d01-9560-4b2aaad60233" /> <br/>
+
+
+ <img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/21e8e4f8-e198-45cd-b965-2782474d5bf1" /> <br/>
+
+ Energy at lower supply voltage (0.5v)
+
+ <img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/42bbe79b-13d3-4eb4-b19c-25b1d0c97559" /> <br/>
+
+ <img width="600" height="200" alt="image" src="https://github.com/user-attachments/assets/f4b51e15-1eba-4065-8e92-7f17db312ac2" /> <br/>
+
+ If we see the rise delay and fall delay
+
+ <img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/a3a02e31-549d-4dec-8c9d-5f5b753c7478" /> <br/>
+
+ At the lower supply voltage(0.5v) , rise time not sufficient to charge output load capacitor 
+
+ <img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/17cd8024-e3d2-4a24-9578-0ae26e028bee" />
+
+ Now we will see rise delay and fall delay at higher supply voltage(1v)
+
+ <img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/d3c65e24-f2d6-4ce7-acd3-22a7683aaff9" /> <br/>
+
+ <img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/4166852a-797a-4491-850a-bab694d6ee09" /> <br/>
+
+ <img width="600" height="200" alt="image" src="https://github.com/user-attachments/assets/0a75ab71-90de-41ce-8735-f0ced9dd1853" />
+
+  ## 43. Lecture-3  Sky130 Supply Variation Labs
+
+  now calculating the supply variation.
+
+  The initial supply voltage is 1.8V, and it is reduced in steps of 0.2V, resulting in    a        total of 6 iterations.
+
+  <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/b6d848fb-9649-4f6d-885d-d4931dd9545f" />
+
+  We will calculate the gain by selecting two points from the steep transition region of the VTC curve and using:
+
+[
+Gain = \frac{\Delta V_{out}}{\Delta V_{in}} = \frac{y_1 - y_0}{x_1 - x_0}
+]
+
+---
+
+For VDD = 1.8V
+
+Selected coordinates from the graph:
+
+Point 1:
+[
+(x_0, y_0) = (1.05,V, 1.72,V)
+]
+
+Point 2:
+[
+(x_1, y_1) = (1.23,V, 0.35,V)
+]
+
+Calculation:
+
+[
+\Delta V_{out} = 0.35 - 1.72 = -1.37,V
+]
+
+[
+\Delta V_{in} = 1.23 - 1.05 = 0.18,V
+]
+
+[
+Gain = \frac{-1.37}{0.18} = -7.6229
+]
+
+[
+|Gain| = 7.6229
+]
+
+---
+
+For VDD = 0.8V
+
+Selected coordinates from the graph:
+
+Point 1:
+[
+(x_0, y_0) = (0.46,V, 0.78,V)
+]
+
+Point 2:
+[
+(x_1, y_1) = (0.55,V, 0.00,V)
+]
+
+Calculation:
+
+[
+\Delta V_{out} = 0.00 - 0.78 = -0.78,V
+]
+
+[
+\Delta V_{in} = 0.55 - 0.46 = 0.0831,V
+]
+
+[
+Gain = \frac{-0.78}{0.0831} = -9.3844
+]
+
+[
+|Gain| = 9.3844
+]
+
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+ 
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
 
 
 
