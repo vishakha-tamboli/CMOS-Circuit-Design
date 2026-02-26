@@ -1669,7 +1669,7 @@ We will now plot the Voltage Transfer Characteristics (VTC) for the following su
   We will calculate the gain by selecting two points from the steep transition region of the VTC curve and using:
 
 [
-Gain = \frac{\Delta V_{out}}{\Delta V_{in}} = \frac{y_1 - y_0}{x_1 - x_0}
+Gain = \frac{\Delta Vout}{\Delta Vin}} = \frac{y_1 - y_0}{x_1 - x_0}
 ]
 
 ---
@@ -1691,11 +1691,11 @@ Point 2:
 Calculation:
 
 [
-\Delta V_{out} = 0.35 - 1.72 = -1.37,V
+\Delta Vout = 0.35 - 1.72 = -1.37,V
 ]
 
 [
-\Delta V_{in} = 1.23 - 1.05 = 0.18,V
+\Delta Vin = 1.23 - 1.05 = 0.18,V
 ]
 
 [
@@ -1725,11 +1725,11 @@ Point 2:
 Calculation:
 
 [
-\Delta V_{out} = 0.00 - 0.78 = -0.78,V
+\Delta Vout = 0.00 - 0.78 = -0.78,V
 ]
 
 [
-\Delta V_{in} = 0.55 - 0.46 = 0.0831,V
+\Delta Vin = 0.55 - 0.46 = 0.0831,V
 ]
 
 [
@@ -1775,11 +1775,118 @@ When considering an inverter chain, the variations may differ from one inverter 
 
 The variation is greater at the edges or sides compared to the center.
 
-<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/77c31f9e-3305-48fe-a86c-b4526fdacffe" />
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/77c31f9e-3305-48fe-a86c-b4526fdacffe" />  <br/>
 
 Therefore the variation in L and W can change the drain current of CMOS inverter.
 
-<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/f4da52bb-b7f6-446f-b2a8-e91031e71586" />
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/f4da52bb-b7f6-446f-b2a8-e91031e71586" />  <br/>
+
+
+
+## 45. Lecture-2  Sources of variation – oxide thickness
+
+
+Another important source of variation is oxide thickness.
+If we consider the cross-sectional view of a CMOS inverter, we can observe the oxide layer beneath the polysilicon gate. During fabrication, the thickness of this oxide layer may vary, which affects the device characteristics.
+
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/47219848-8f9d-4ea3-8303-1944d6cfacd3" />  <br/>
+
+
+
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/865c2d0b-a991-41bd-92d7-e6d0c44cdacd" />  <br/>
+
+<img width="751" height="370" alt="image" src="https://github.com/user-attachments/assets/1015e467-3e32-4e3f-bffe-3b6f7e8e4e5b" /> <br/>
+
+
+
+ 
+
+
+## 46. Lecture-3   Smart SPICE simulation for device variations
+
+We will now perform SPICE simulations to study device variations and demonstrate the robustness of the CMOS inverter under different extreme conditions.
+
+We will analyze the characteristics for two cases:
+
+- Strong PMOS and weak NMOS: In this case, the PMOS has a larger width, resulting in lower resistance, while the NMOS is weaker.
+
+- Weak PMOS and strong NMOS: Here, the NMOS has a larger width than the PMOS, resulting in lower resistance, while the PMOS is weaker.
+
+<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/4336fac7-1167-406e-b84e-9ded1f454c3c" />
+
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/f9a3eecf-82ac-4f2b-8893-3b346445d522" />
+
+we will do the simulation
+
+
+M1 out in vdd vdd pmos W=0.375u L=0.25u
+M2 out in 0 0 nmos W=0.375u L=0.25u
+
+cload out 0 10f
+
+.control
+let nmoswidth = 0.375u
+alter M2 W = nmoswidth
+
+let pmoswidth = 1.875u
+alter M1 W = pmoswidth
+
+let widthVariation = 0
+dowhile widthVariation < 5
+
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/3c04c518-ed6f-45e4-b540-9248bd20ef69" />
+
+
+
+
+
+## 47. Lecture-4   Conclusion
+
+
+The switching threshold (Vm) shifts to the right when the PMOS is strong, and shifts to the left when the NMOS is strong.
+
+
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/66c89af1-50db-4d3d-be4f-6e970af43903" />
+
+There is not much variation in the noise margins in either of the extreme cases, which indicates that the inverter behaves robustly under both conditions.
+
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/c19f560a-0eed-4c4b-aa13-707c1f6f8f57" />
+
+
+## 48. Lecture-5  Sky130 Device Variation Labs
+
+We will now do the SPICE simulations for the device variations
+
+
+
+We can observe that the width of the PMOS is significantly larger than that of the NMOS. Therefore, this corresponds to a strong PMOS and weak NMOS case. As a result, the switching threshold (Vm) shifts to the right.
+
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/1a53cab9-82f3-4cf1-bcf2-eaf221ddf015" />
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
