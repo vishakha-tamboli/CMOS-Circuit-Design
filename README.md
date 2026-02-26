@@ -1265,6 +1265,111 @@ For a W/L ratio of 2.3, the switching threshold (Vm) is approximately 0.876 V, o
 <img width="645" height="393" alt="image" src="https://github.com/user-attachments/assets/4001f862-bb22-464b-888a-a24b0bc5f7a4" />
 
 
+Transient analysis is used to measure propagation delays at the 50% output level (0.9 V for 1.8 V supply). The delay is calculated as the time difference between input and output at this midpoint.
+
+Rise delay = 2.482 ns − 2.15 ns = 0.333 ns, and the fall delay is obtained similarly during the falling transition.
+
+From the transient waveform, the fall delay measured at the 50% level (0.9 V) is calculated as:
+
+Fall Delay = 4.334 ns − 4.050 ns = 0.285 ns
+
+
+
+## Static behaviour evaluation-CMOS inverter robustness-Switching Threshold
+
+## 30. Lecture-1  Switching Threshold, Vm
+
+
+<img width="700" height="600" alt="image" src="https://github.com/user-attachments/assets/2b9c8134-0796-4a8a-9901-a422ef82bcb1" />
+
+
+
+- When CMOS inverters with different (W/L) ratios are compared, the overall VTC shape remains almost unchanged, but the switching threshold (Vm) shifts, showing the robustness of the CMOS inverter.
+
+- The switching threshold (Vm) is the point where Vin = Vout. It can be found by drawing a 45° diagonal line on the VTC curve; the intersection gives Vm.
+
+- Vm for (Wp/Lp) = 1.5 ≈ 0.98 V
+
+- Vm for (Wp/Lp) = 3.75 ≈ 1.2 V
+
+- At Vm, both NMOS and PMOS conduct simultaneously as their gate-source voltages are near the threshold region.
+
+- Static behavior analysis includes switching threshold, noise margin, power supply variation, and device variation, indicating stable inverter performance.
+
+<img width="700" height="600" alt="image" src="https://github.com/user-attachments/assets/365195c4-12af-4483-9800-cb2144f4ec8b" />
+
+From the VTC plot at the switching point (Vm), a few key observations can be noted:
+
+- At Vm, Vin = Vout, hence for both transistors, Vgs = Vds.
+
+- The drain currents of PMOS and NMOS are equal in magnitude but opposite in direction, i.e., IdsP = −IdsN.
+
+- Therefore, the net current at the output node is zero (IdsP + IdsN = 0), indicating equilibrium at the switching threshold.
+
+
+## 31. Lecture-2 Analytical expression of Vm as a function of (W/L)p and (W/L)n
+
+
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/aca240df-dd24-4fa7-89c2-c49f74fdc937" />
+
+- The channel length modulation term (1 + λVds) is neglected because λ is very small, and including it complicates manual calculations without significantly affecting the result.
+
+- At the switching threshold (Vm), the condition IdsP + IdsN = 0 is applied, meaning the PMOS and NMOS currents are equal in magnitude and opposite in direction.
+
+- Using the saturation current equations (without the λ term) for both transistors, the currents are equated to solve for Vm.
+
+- This simplification allows easier analytical estimation of the switching threshold voltage.
+
+We know the equations for IdsN and IdsP 
+
+<img width="377" height="114" alt="image" src="https://github.com/user-attachments/assets/3c392cfb-739f-49fd-bba4-6bf69369d602" />
+
+Solving the above equation for Vm
+
+
+<img width="616" height="227" alt="image" src="https://github.com/user-attachments/assets/ef42feb1-267b-4439-8bd0-c64a77e96c3c" />
+
+
+
+
+
+## 32. Lecture-3  Analytical expression of (W/L)p and (W/L)n as a function of Vm
+
+Alternatively, the PMOS-to-NMOS sizing ratio can be determined analytically to achieve a desired switching threshold voltage (Vm).
+
+ <img width="700" height="400" alt="image" src="https://github.com/user-attachments/assets/9bae4736-2f78-488d-a43d-42a896e659e2" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
 
 
 
