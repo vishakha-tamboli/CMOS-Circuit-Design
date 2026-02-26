@@ -1421,14 +1421,14 @@ Fall delay ≈ 2.07653 ns − 2.00486 ns ≈ 0.072 ns.
  SPICE simulations will be performed with a larger PMOS width, and the results will be compared with the previous configuration.
 
 
- <img width="700" height="600" alt="image" src="https://github.com/user-attachments/assets/3fa92bda-d3ff-4138-b47f-6a3b8d397544" /> <br/>
+ <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/3fa92bda-d3ff-4138-b47f-6a3b8d397544" /> <br/>
 
 
- <img width="700" height="600" alt="image" src="https://github.com/user-attachments/assets/861478e1-5cdd-40fd-860a-49989451ded7" /> <br/>
+ <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/861478e1-5cdd-40fd-860a-49989451ded7" /> <br/>
 
- <img width="700" height="600 " alt="image" src="https://github.com/user-attachments/assets/b766c969-eab1-469c-bf65-40d843a04890" />  <br/>
+ <img width="700" height="500 " alt="image" src="https://github.com/user-attachments/assets/b766c969-eab1-469c-bf65-40d843a04890" />  <br/>
 
- <img width="700" height="600" alt="image" src="https://github.com/user-attachments/assets/5b8e1563-da7f-4a51-aa98-c6b333e5eeed" />  <br/>
+ <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/5b8e1563-da7f-4a51-aa98-c6b333e5eeed" />  <br/>
 
  this is observed that as , The rise delay decreases as the PMOS width (Wp/Lp) increases. This is because a wider PMOS provides stronger pull-up capability, reducing the time required to charge the output capacitor.
 
@@ -1454,9 +1454,9 @@ In clock buffers, rise and fall delays are designed to be equal to maintain symm
 
 
 
- <img width="700" height="500    " alt="image" src="https://github.com/user-attachments/assets/c8f52ba2-5c45-4410-a799-12172e82cda1" />
+ <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/c8f52ba2-5c45-4410-a799-12172e82cda1" />  <br/>
 
- <img width="700" height="600 " alt="image" src="https://github.com/user-attachments/assets/15806bfd-97c9-41c7-bab8-4b0100962717" />
+ <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/15806bfd-97c9-41c7-bab8-4b0100962717" />  <br/>
 
  ## Day 4  CMOS Noise Margin Robustness Evaluation
 
@@ -1464,6 +1464,180 @@ In clock buffers, rise and fall delays are designed to be equal to maintain symm
 
 
  ## 36. Lecture-1   Introduction to noise margin
+
+ Now we study the robustness of a CMOS inverter in terms of Noise Margin and how it is evaluated from its input–output characteristics.
+
+Noise Margin is the measure of how much unwanted electrical noise a logic circuit can tolerate at its input without causing an incorrect output. It indicates the reliability of the inverter in the presence of disturbances.
+
+In an ideal inverter, when the input is 0 the output is 1, and when the input is 1 the output is 0, with an infinite switching slope (instant transition). However, in a practical CMOS inverter, the transition is gradual, resulting in a finite slope. By observing the ideal and actual input–output characteristics (VTC), we can determine the noise margins and evaluate how robust the inverter is against noise.
+
+
+  <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/5b507d88-2c9a-4db3-a039-0b4af195a429" />
+
+  In practical CMOS inverters, the switching slope is not infinite because parasitic resistances and capacitances introduce delay in the transition. As a result, the output changes gradually, leading to a finite slope in the VTC instead of an ideal abrupt transition.
+
+
+
+  <img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/395824cd-6f42-41c9-9768-6f530023a152" />  <br/>
+
+  Now we observe that when the input voltage lies between 0 and (Vil) (maximum input low voltage), the output remains at (Voh) (output high voltage).
+
+Similarly, when the input voltage is between (V_{IH}) (minimum input high voltage) and (Vdd), the output stays at (Vol) (output low voltage).
+
+
+  <img width="500" height="100" alt="image" src="https://github.com/user-attachments/assets/68f06d06-51a1-4fa1-811d-ff86b07116c1" />  <br/>
+
+
+  <img width="300" height="300 " alt="image" src="https://github.com/user-attachments/assets/1808084e-63b4-47fe-83aa-680cabc8801c" />  <br/>
+
+
+   <img width="500" height="100" alt="image" src="https://github.com/user-attachments/assets/c16f45d1-ee77-45f8-9ec6-f7b756d22eb2" />  <br/>
+
+
+   <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/ab33ed17-dc95-418b-873b-7e29779d95f9" />  <br/>
+
+
+ ## 37. Lecture-2  Noise margin voltage parameters
+
+ - In practical CMOS inverters, due to non-idealities, the VTC curve is gradual instead of ideal.
+
+ - <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/eccefd39-025e-458f-8b92-f4c7c536008e" />
+
+
+- When (0 < Vin < Vil), the output is in the high region: (Voh < Vout < Vdd).
+
+- When the input is high (close to (Vdd)), the output is in the low region: (0 < Vout < Vol).
+
+- The voltage levels satisfy: (Vol < Voh < Vdd) and (0 < Vol < Vil), ensuring proper operation of the next inverter stage.
+
+- The slope in the transition region is approximately −1, meaning as input increases, output decreases.
+
+- <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/bd66869c-6adc-4e2c-aaa2-13f2b6688587" />
+
+ ## 38. Lecture-3 Noise margin equation and summary
+
+ to derive the noise margin equations, we will plot the relevant voltage levels on the same scale for proper comparison and analysis.
+
+ <img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/21c8afac-ce62-4ab2-9488-d8d8366fb5ff" /> <br/>
+
+ On the above scale:
+
+- Noise Margin High (NH) – the voltage difference between (Vih) and (Voh).
+- Noise Margin Low (NL) – the voltage difference between (Vil) and (Vol).
+
+Any input voltage within these noise margins is interpreted correctly as logic 1 or 0 and is tolerable. Voltages outside this range fall in the undefined region, where the logic level can fluctuate between high and low.
+
+
+ <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/0cf6070f-2a53-4f4b-a722-3ecf06450bb3" /> <br/>
+
+ <img width="580" height="336" alt="image" src="https://github.com/user-attachments/assets/b0be92fe-2287-4f07-9d6e-1857cc02a74f" /> <br/>
+
+
+  ## 39. Lecture-4  Noise margin variation with respect to PMOS width
+
+  We will evaluate the noise margin based on the PMOS width to demonstrate the robustness of a CMOS inverter.
+
+First, we identify the points where the slope equals −1 and extend the tangent lines toward the x and y axes.
+
+
+
+
+  <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/4b870f60-e6b5-4aa5-a32c-3c435219f22a" />
+
+
+  <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/0d639c84-df54-4b33-bf26-b9615a7026ad" />
+
+  <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/1f6c2052-9d7d-4d7c-b2a7-98f17040e7cc" />
+
+
+  <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/259db2c0-cd7a-48db-a832-07fd8688a2d8" /> 
+
+
+  <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/83bbd90b-e1c0-45b6-a112-5c09c264e718" />
+
+
+- Increasing PMOS width raises the high noise margin (NH).
+- Low noise margin (NL) remains fairly stable.
+- Wider PMOS improves overall noise tolerance and robustness of the inverter.
+
+
+  <img width="600" height="300" alt="image" src="https://github.com/user-attachments/assets/1ef67e6b-31b8-43b6-9219-50b5c841b925" />
+
+  We can also identify the voltage ranges that define the "digital" and "analog" regions of the CMOS inverter.
+
+
+
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/af6721f8-1bf6-4d04-a9ea-2edd8737cab5" />
+
+
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/b4b56812-7bf0-42ad-aabc-93c1fd2d2179" />
+
+
+ ## 40. Lecture-5  Noise margin variation with respect to PMOS width
+
+ ploting Noise margins
+
+
+
+ <img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/2a4a2698-aa08-426a-a219-89e91cbcdb5b" />
+
+ We set the PMOS-to-NMOS W/L ratio to 2.77 and sweep (Vin) from 0 to 1.8 V in steps of 0.01 V.
+
+ 
+
+  <img width="355" height="72" alt="image" src="https://github.com/user-attachments/assets/511dbca6-ebfb-4a15-8328-8aa3da0b15b3" />
+
+  We consider the point where the slope equals −1. At this point, the x-axis values give (V_{IL}) and (V_{IH}), while the y-axis values give (V_{OH}) and (V_{OL}).
+
+The noise margins are calculated as:
+
+- (NH = Voh - Vih = 1.70952 - 0.98778 = 0.72) V
+- (NL = Vil - Vol = 0.7733 - 0.09523 = 0.67807) V
+
+
+
+
+  
+
+
+
+
+
+
+
+ 
+
+
+
+  
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+ 
 
 
 
